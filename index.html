@@ -99,7 +99,58 @@
     padding:2.5rem 1.5rem 4rem 1.5rem;
   }
 
-  /* ---------- Closing editorial note (used at the very end of the document) ---------- */
+  /* ---------- Infobox ---------- */
+  .cm-infobox{
+    background:var(--parchment-bg-raised);
+    border:1px solid var(--hairline);
+    border-radius:6px;
+    padding:1.3rem 1.6rem;
+    margin:0 0 2.2rem 0;
+    font-size:1.02rem;
+  }
+  .cm-infobox strong{ color:var(--gold); }
+  .cm-infobox table{ width:100%; border-collapse:collapse; }
+  .cm-infobox td{ padding:0.3rem 0.6rem 0.3rem 0; vertical-align:top; }
+  .cm-infobox td:first-child{ color:var(--rust); text-transform:uppercase; font-size:0.72rem; letter-spacing:0.06em; width:9rem; font-family:Georgia,serif; }
+
+  /* ---------- Section blocks ---------- */
+  .cm-block{ border-top:1px solid var(--hairline); padding-top:2.4rem; margin-top:3rem; }
+  .cm-block:first-of-type{ border-top:none; padding-top:0; margin-top:0; }
+  .cm-kicker{ text-transform:uppercase; letter-spacing:0.14em; font-size:0.78rem; color:var(--gold); font-family:Georgia,serif; margin-bottom:0.6rem; }
+  h2.cm-h2{ font-size:2rem; font-weight:600; color:var(--gold-bright); margin:0 0 0.3rem 0; }
+  h3.cm-h3{ font-size:1.4rem; color:var(--gold); margin:2.2rem 0 0.6rem 0; font-weight:600; }
+  h4.cm-h4{ font-size:1.12rem; color:var(--ink); border-left:3px solid var(--rust); padding-left:0.7rem; margin:1.6rem 0 0.5rem 0; }
+  p{ margin:0 0 1rem 0; font-size:1.14rem; }
+  .cm-lede{ font-size:1.28rem; color:var(--ink-dim); font-style:italic; }
+
+  /* ---------- Verse / Lakṣaṇa cards ---------- */
+  .cm-verse-block{ background:var(--parchment-bg-raised); border-left:3px solid var(--gold); padding:1.1rem 1.5rem; margin:1.2rem 0; border-radius:0 6px 6px 0; }
+  .cm-verse-block .deva{ font-size:1.35rem; color:var(--gold-bright); display:block; margin-bottom:0.4rem; }
+  .cm-verse-block .cm-translit{ font-style:italic; color:var(--ink-dim); display:block; margin-bottom:0.5rem; }
+  .cm-lakshana-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0.9rem; margin:1rem 0 1.8rem 0; }
+  .cm-lp-card{ border:1px solid var(--hairline); border-radius:6px; padding:0.9rem 1.1rem; background:var(--parchment-bg-raised); }
+  .cm-lp-card .cm-lp-label{ color:var(--rust); text-transform:uppercase; letter-spacing:0.08em; font-size:0.72rem; font-family:Georgia,serif; display:block; margin-bottom:0.3rem; }
+
+  /* ---------- Table ---------- */
+  table.cm-table{ width:100%; border-collapse:collapse; margin:1.4rem 0 2rem 0; font-size:1rem; }
+  table.cm-table th, table.cm-table td{ border:1px solid var(--hairline); padding:0.65rem 0.8rem; text-align:left; vertical-align:top; }
+  table.cm-table th{ color:var(--gold); background:rgba(201,162,75,0.06); }
+
+  /* ---------- Divider ---------- */
+  hr.cm-div{ border:none; text-align:center; margin:2.6rem 0; color:var(--gold); font-size:1.1rem; letter-spacing:0.5rem; }
+  hr.cm-div::after{ content:"❖ ❖ ❖"; }
+
+  /* ---------- Footnotes / Bibliography / Glossary ---------- */
+  .cm-footnotes{ font-size:0.92rem; color:var(--ink-dim); border-top:1px solid var(--hairline); padding-top:1.6rem; margin-top:2.6rem; }
+  .cm-footnotes ol{ padding-left:1.2rem; }
+  .cm-bibliography{ font-size:0.98rem; color:var(--ink-dim); }
+  .cm-bibliography ul{ list-style:none; padding:0; }
+  .cm-bibliography li{ padding:0.5rem 0; border-bottom:1px solid var(--hairline); }
+  .cm-glossary-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.8rem; }
+  .cm-glossary-entry{ background:var(--parchment-bg-raised); border:1px solid var(--hairline); border-radius:6px; padding:0.8rem 1rem; }
+  .cm-glossary-entry .deva{ color:var(--gold-bright); font-size:1.1rem; display:block; }
+
+  /* ---------- Closing editorial note ---------- */
   .cm-editorial-close{
     margin-top:3rem;
     padding:1.6rem 1.8rem;
@@ -151,6 +202,7 @@
   <a href="#part-five">Part Five · Nyāsa</a>
   <a href="#part-six">Part Six · Kuṇḍalinī</a>
 </nav>
+
 <main>
 <section id="cm-mss-root">
 <style>
@@ -544,7 +596,7 @@
         <span class="cm-translit">udyamo bhairavaḥ</span>
         <span class="cm-gloss">"The (sudden) upsurge is Bhairava."</span>
       </div>
-      <p><strong>Cross-reference:</strong> Compare Ṛgveda 10.125.3's rāṣṭrī, "sovereign queen" — udyama's sudden upsurge and Vāk's declared sovereignty both figure the ultimate ground as spontaneously self-asserting rather than passively awaiting discovery; the difference in grammatical gender across the two texts (Bhairava masculine, Vāk feminine) is itself, in the tradition's own later Śakti-theology, treated as two necessary aspects of one non-dual reality rather than a doctrinal inconsistency.</p>
+      <p><strong>Cross-reference:</strong> Compare Ṛgveda 10.125.3's rāṣṭrī, "sovereign queen." Udyama's sudden upsurge and Vāk's declared sovereignty both figure the ultimate ground as spontaneously self-asserting rather than passively awaiting discovery; the difference in grammatical gender across the two texts (Bhairava masculine, Vāk feminine) is itself, in the tradition's own later Śakti-theology, treated as two necessary aspects of one non-dual reality rather than a doctrinal inconsistency.</p>
     </div>
 
     <div class="cm-shloka-entry">
@@ -600,566 +652,118 @@
 </div>
 
 </section>
-<!-- ===================== end Cultural Musings supplement ===================== -->
-<!-- ===================================================================
-     Cultural Musings — Injectable Supplement (Part Two, Standalone)
-     Śiva Sūtras: Six-Register Deep-Dive · Eleven Cross-Referenced Ślokas
-     Paste this block immediately before the closing </body> tag.
-     Self-contained: scoped styles under #cm-ss2-root, no external classes required.
-     =================================================================== -->
-<section id="cm-ss2-root">
+<section id="cm-mss4-root">
 <style>
-  #cm-ss2-root {
-    --parchment-bg: #15120e;
-    --parchment-bg-raised: #1c1712;
-    --gold: #c9a24b;
-    --gold-bright: #e0bb62;
-    --rust: #9c5a3c;
-    --ink: #e9dfc9;
-    --ink-dim: #b8ab8e;
-    --hairline: rgba(201,162,75,0.28);
-    background: var(--parchment-bg);
-    color: var(--ink);
-    font-family: "Cormorant Garamond","Crimson Text",Georgia,serif;
-    line-height: 1.75;
-    padding: 3.5rem 1.5rem;
-    max-width: 980px;
-    margin: 0 auto;
-  }
-  #cm-ss2-root .cm-deva { font-family: "Noto Sans Devanagari","Sanskrit 2003",serif; }
-  #cm-ss2-root .cm-block { border-top: 1px solid var(--hairline); padding-top: 2.5rem; margin-top: 3rem; }
-  #cm-ss2-root .cm-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
-  #cm-ss2-root .cm-kicker { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--gold); font-family: Georgia, serif; margin-bottom: 0.6rem; }
-  #cm-ss2-root h2.cm-h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 2.1rem; color: var(--gold-bright); margin: 0 0 0.3rem 0; }
-  #cm-ss2-root .cm-deva-title { font-size: 1.3rem; color: var(--ink-dim); margin-bottom: 1.6rem; }
-  #cm-ss2-root h3.cm-h3 { font-size: 1.4rem; color: var(--gold); margin: 2.2rem 0 0.6rem 0; font-weight: 600; }
-  #cm-ss2-root h4.cm-h4 { font-size: 1.12rem; color: var(--ink); border-left: 3px solid var(--rust); padding-left: 0.7rem; margin: 1.6rem 0 0.5rem 0; }
-  #cm-ss2-root p { margin: 0 0 1rem 0; font-size: 1.14rem; color: var(--ink); }
-  #cm-ss2-root .cm-lede { font-size: 1.28rem; color: var(--ink-dim); font-style: italic; }
-  #cm-ss2-root .cm-infobox { background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; padding: 1.3rem 1.6rem; margin: 1.4rem 0 2rem 0; font-size: 1.02rem; }
-  #cm-ss2-root .cm-infobox strong { color: var(--gold); }
-  #cm-ss2-root .cm-verse-block { background: var(--parchment-bg-raised); border-left: 3px solid var(--gold); padding: 1.1rem 1.5rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
-  #cm-ss2-root .cm-verse-block .cm-deva { font-size: 1.35rem; color: var(--gold-bright); display:block; margin-bottom:0.4rem; }
-  #cm-ss2-root .cm-verse-block .cm-translit { font-style: italic; color: var(--ink-dim); display:block; margin-bottom:0.5rem; }
-  #cm-ss2-root .cm-verse-block .cm-gloss { color: var(--ink); font-size: 1.02rem; }
-  #cm-ss2-root .cm-lakshana-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 0.9rem; margin: 1rem 0 1.8rem 0; }
-  #cm-ss2-root .cm-lp-card { border: 1px solid var(--hairline); border-radius: 6px; padding: 0.9rem 1.1rem; background: var(--parchment-bg-raised); }
-  #cm-ss2-root .cm-lp-card .cm-lp-label { color: var(--rust); text-transform: uppercase; letter-spacing:0.08em; font-size:0.72rem; font-family:Georgia,serif; display:block; margin-bottom:0.3rem; }
-  #cm-ss2-root table.cm-table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem 0; font-size: 1rem; }
-  #cm-ss2-root table.cm-table th, #cm-ss2-root table.cm-table td { border: 1px solid var(--hairline); padding: 0.65rem 0.8rem; text-align: left; vertical-align: top; }
-  #cm-ss2-root table.cm-table th { color: var(--gold); background: rgba(201,162,75,0.06); }
-  #cm-ss2-root .cm-qa-list { list-style: none; padding: 0; margin: 1rem 0 2rem 0; counter-reset: cm-qcounter2; }
-  #cm-ss2-root .cm-qa-list li { counter-increment: cm-qcounter2; position: relative; padding: 0.9rem 1.2rem 0.9rem 3rem; margin-bottom: 0.8rem; background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; }
-  #cm-ss2-root .cm-qa-list li::before { content: counter(cm-qcounter2); position: absolute; left: 0.9rem; top: 0.85rem; color: var(--gold-bright); font-weight: 700; font-size: 1.1rem; font-family: Georgia, serif; }
-  #cm-ss2-root .cm-shloka-list { counter-reset: cm-scounter2; }
-  #cm-ss2-root .cm-shloka-entry { counter-increment: cm-scounter2; position: relative; padding-left: 2.6rem; margin: 1.8rem 0; }
-  #cm-ss2-root .cm-shloka-entry::before { content: counter(cm-scounter2); position: absolute; left: 0; top: 0.15rem; width: 1.9rem; height: 1.9rem; border: 1px solid var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--gold-bright); font-family: Georgia, serif; font-size: 0.95rem; }
-  #cm-ss2-root .cm-source-tag { font-size: 0.82rem; color: var(--rust); text-transform: uppercase; letter-spacing: 0.06em; }
-  #cm-ss2-root hr.cm-div { border: none; text-align: center; margin: 2.6rem 0; color: var(--gold); font-size: 1.1rem; letter-spacing: 0.5rem; }
-  #cm-ss2-root hr.cm-div::after { content: "❖ ❖ ❖"; }
-  #cm-ss2-root .cm-register-tag { display:inline-block; background: rgba(156,90,60,0.18); color: var(--gold-bright); border: 1px solid var(--hairline); border-radius: 999px; padding: 0.15rem 0.75rem; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.8rem; }
+  #cm-mss4-root { --parchment-bg: #15120e; --parchment-bg-raised: #1c1712; --gold: #c9a24b; --gold-bright: #e0bb62; --rust: #9c5a3c; --ink: #e9dfc9; --ink-dim: #b8ab8e; --hairline: rgba(201,162,75,0.28); background: var(--parchment-bg); color: var(--ink); font-family: "Cormorant Garamond","Crimson Text",Georgia,serif; line-height: 1.75; padding: 3.5rem 1.5rem; max-width: 980px; margin: 0 auto; }
+  #cm-mss4-root .cm-deva { font-family: "Noto Sans Devanagari","Sanskrit 2003",serif; }
+  #cm-mss4-root .cm-block { border-top: 1px solid var(--hairline); padding-top: 2.5rem; margin-top: 3rem; }
+  #cm-mss4-root .cm-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
+  #cm-mss4-root .cm-kicker { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--gold); font-family: Georgia, serif; margin-bottom: 0.6rem; }
+  #cm-mss4-root h2.cm-h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 2.1rem; color: var(--gold-bright); margin: 0 0 0.3rem 0; }
+  #cm-mss4-root .cm-deva-title { font-size: 1.3rem; color: var(--ink-dim); margin-bottom: 1.6rem; }
+  #cm-mss4-root h3.cm-h3 { font-size: 1.4rem; color: var(--gold); margin: 2.2rem 0 0.6rem 0; font-weight: 600; }
+  #cm-mss4-root h4.cm-h4 { font-size: 1.12rem; color: var(--ink); border-left: 3px solid var(--rust); padding-left: 0.7rem; margin: 1.6rem 0 0.5rem 0; }
+  #cm-mss4-root p { margin: 0 0 1rem 0; font-size: 1.14rem; color: var(--ink); }
+  #cm-mss4-root .cm-lede { font-size: 1.28rem; color: var(--ink-dim); font-style: italic; }
+  #cm-mss4-root .cm-infobox { background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; padding: 1.3rem 1.6rem; margin: 1.4rem 0 2rem 0; font-size: 1.02rem; }
+  #cm-mss4-root .cm-infobox strong { color: var(--gold); }
+  #cm-mss4-root .cm-verse-block { background: var(--parchment-bg-raised); border-left: 3px solid var(--gold); padding: 1.1rem 1.5rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; }
+  #cm-mss4-root .cm-verse-block .cm-deva { font-size: 1.3rem; color: var(--gold-bright); display:block; margin-bottom:0.4rem; }
+  #cm-mss4-root .cm-verse-block .cm-translit { font-style: italic; color: var(--ink-dim); display:block; margin-bottom:0.5rem; }
+  #cm-mss4-root .cm-verse-block .cm-gloss { color: var(--ink); font-size: 1.02rem; }
+  #cm-mss4-root .cm-register-tag { display:inline-block; background: rgba(156,90,60,0.18); color: var(--gold-bright); border: 1px solid var(--hairline); border-radius: 999px; padding: 0.15rem 0.75rem; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.8rem; }
+  #cm-mss4-root table.cm-table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem 0; font-size: 1rem; }
+  #cm-mss4-root table.cm-table th, #cm-mss4-root table.cm-table td { border: 1px solid var(--hairline); padding: 0.65rem 0.8rem; text-align: left; vertical-align: top; }
+  #cm-mss4-root table.cm-table th { color: var(--gold); background: rgba(201,162,75,0.06); }
+  #cm-mss4-root .cm-qa-list { list-style: none; padding: 0; margin: 1rem 0 2rem 0; counter-reset: cm-qcounter4 10; }
+  #cm-mss4-root .cm-qa-list li { counter-increment: cm-qcounter4; position: relative; padding: 0.9rem 1.2rem 0.9rem 3rem; margin-bottom: 0.8rem; background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; }
+  #cm-mss4-root .cm-qa-list li::before { content: counter(cm-qcounter4); position: absolute; left: 0.9rem; top: 0.85rem; color: var(--gold-bright); font-weight: 700; font-size: 1.1rem; font-family: Georgia, serif; }
+  #cm-mss4-root .cm-source-tag { font-size: 0.82rem; color: var(--rust); text-transform: uppercase; letter-spacing: 0.06em; }
+  #cm-mss4-root hr.cm-div { border: none; text-align: center; margin: 2.6rem 0; color: var(--gold); font-size: 1.1rem; letter-spacing: 0.5rem; }
+  #cm-mss4-root hr.cm-div::after { content: "❖ ❖ ❖"; }
 </style>
 
 <!-- ================================================================
-     PART ONE (of this snippet) — ŚIVA SŪTRAS: SIX REGISTERS
+     EXTENDED COMMENTARY — PHILOSOPHICAL, SCIENTIFIC, NEUROLOGICAL
      ================================================================ -->
 <div class="cm-block">
-  <div class="cm-kicker">Hermeneutic Deep-Dive · Standalone</div>
-  <h2 class="cm-h2">The Śiva Sūtras: A Six-Register Reading</h2>
-  <div class="cm-deva-title cm-deva">शिवसूत्राणि — षड्विधव्याख्या</div>
+  <div class="cm-kicker">Extended Commentary · Additional Registers</div>
+  <h2 class="cm-h2">Extended Commentary: Philosophical, Scientific, and Neurological Threads Revisited</h2>
+  <div class="cm-deva-title cm-deva">विस्तृतव्याख्या — दार्शनिकं वैज्ञानिकं तन्त्रिकाशास्त्रीयं च</div>
+  <p class="cm-lede">The registers opened earlier in this paper are not exhausted by a single pass. What follows returns to the philosophical, scientific, and neurological threads already introduced, and pulls each somewhat further — not to settle what the earlier sections left open, but to give each register room enough to show its own internal texture rather than standing as a single illustrative paragraph among five or six others.</p>
 
-  <p class="cm-lede">Seventy-seven aphorisms, three unmeṣas, and — this reading proposes — six entirely distinct languages in which the same seventy-seven aphorisms can be legitimately, if unevenly, translated: the language of philosophy, of cognitive science, of neurology, of traditional medicine, of metaphor, and of metaphysics proper. None of the six exhausts the text. Each recovers something the other five leave standing outside their own vocabulary.</p>
+  <h3 class="cm-h3">I. Philosophical Register, Extended</h3>
+  <span class="cm-register-tag">Comparative Metaphysics of Self and Bondage</span>
+  <h4 class="cm-h4">A. The Self-Evidencing Problem</h4>
+  <p>Śiva Sūtra 1.1's caitanyam ātmā declines to argue for its own claim, and this refusal is itself philosophically interesting enough to merit separate treatment. Compare the structurally similar move in Husserlian phenomenology, where the transcendental ego is disclosed through the epoché — the bracketing of the natural attitude — rather than inferred from premises about the external world. Both projects share the conviction that the ultimate subject of experience cannot, without circularity, be established by any procedure that already presupposes it as the one doing the establishing. Where the two projects diverge sharply is in what follows from that shared starting point: Husserl's bracketing yields a rigorously described field of intentional structures, offered as a descriptive science of consciousness, while the Śiva Sūtras' caitanyam ātmā is offered as already, in itself, the liberating recognition rather than a preliminary step toward one. The comparison is worth holding onto precisely because it clarifies, by contrast, how much weight the Śaiva text places on recognition (pratyabhijñā) as sufficient in itself — a philosophical commitment phenomenology, for its own methodological reasons, does not make.</p>
 
-  <div class="cm-lakshana-grid">
-    <div class="cm-lp-card"><span class="cm-lp-label">Śāmbhavopāya · I.1–I.22</span>Direct, will-based recognition; no intermediate technique; consciousness recognises itself as itself, without mediating object.</div>
-    <div class="cm-lp-card"><span class="cm-lp-label">Śāktopāya · II.1–II.10</span>Recognition mediated through thought, mantra, and the Mātṛkā-power examined in this series' companion paper.</div>
-    <div class="cm-lp-card"><span class="cm-lp-label">Āṇavopāya · III.1–III.45</span>Recognition mediated through the aṇu — breath, body, individuated mind, and ritual object; the longest and most technique-dense of the three sections.</div>
-  </div>
-
-  <h3 class="cm-h3">I. Philosophical Register</h3>
-  <span class="cm-register-tag">Ontology · Epistemology</span>
-  <div class="cm-verse-block">
-    <span class="cm-deva">चैतन्यमात्मा</span>
-    <span class="cm-translit">caitanyam ātmā</span>
-    <span class="cm-gloss">1.1 — "Consciousness is the Self."</span>
-  </div>
-  <p>The opening sūtra does not argue for its claim; it states it, and everything that follows is offered as elaboration rather than proof. This is itself a philosophical position — that the ultimate nature of the self is not a conclusion inferable from prior premises but a fact directly available to recognition (pratyabhijñā), such that any argument for it would already presuppose the very consciousness the argument claims to be establishing. Compare the classical Nyāya demand for inferential proof (anumāna) of the self's existence: the Śiva Sūtras decline that demand altogether, treating it as a category error to ask consciousness to prove itself through means (inference, testimony) that are themselves nothing but consciousness's own instruments.</p>
-  <div class="cm-verse-block">
-    <span class="cm-deva">ज्ञानं बन्धः</span>
-    <span class="cm-translit">jñānaṁ bandhaḥ</span>
-    <span class="cm-gloss">1.2 — "(Limited) knowledge is bondage."</span>
-  </div>
-  <p>A philosophically provocative inversion: elsewhere in the Indian tradition, jñāna (knowledge) is the standard term for liberating insight. Here it names the mechanism of bondage instead — provided the qualifier is kept firmly in place. This is not knowledge as such but pramātṛ-jñāna, the fragmenting, subject-object-splitting cognition by which an undivided field of awareness comes to experience itself as a knower confronting objects it is not. Philosophically, the sūtra is doing the same work Advaita Vedānta does with avidyā, except that where Advaita treats the fragmenting principle as a beginningless cosmic ignorance requiring a separate epistemic corrective (śravaṇa-manana-nididhyāsana), the Śiva Sūtras treat it as reversible by a single act of recognition available in principle at any moment — a considerably more voluntarist position.</p>
-  <div class="cm-verse-block">
-    <span class="cm-deva">योनिवर्गः कलाशरीरम्</span>
-    <span class="cm-translit">yoni-vargaḥ kalā-śarīram</span>
-    <span class="cm-gloss">1.3 (traditional numbering) — "The multitude of sources is the body composed of the kalās (the limiting powers)."</span>
-  </div>
-  <p>Where 1.1–1.2 establish the ground and its obscuration in the abstract, this sūtra locates the obscuring apparatus specifically: the "body" a bound soul takes itself to be is not flesh alone but a composite of kalās, the finite powers (of action, of knowledge, of time, of necessity, of limited pervasion) that together constitute individuated experience. Philosophically, this is an early, technically precise theory of subjectivity-construction: selfhood, on this account, is not a simple substance but an assembled structure, built up out of a determinate, enumerable set of limiting factors — closer in spirit to a constructivist theory of the self than to a simple-substance theory.</p>
-
-  <h3 class="cm-h3">II. Scientific / Cognitive Register</h3>
-  <span class="cm-register-tag">Structural Parallel, Not Identity</span>
-  <p>Held at arm's length from any claim of equivalence, several sūtras admit a suggestive structural conversation with contemporary cognitive-science vocabulary.</p>
+  <h4 class="cm-h4">B. Three Accounts of the Fragmenting Mechanism</h4>
+  <p>Jñānaṁ bandhaḥ (1.2) is not the only classical Indian account of how an undivided field of experience comes to seem fragmented into a bounded self confronting separate objects. Placing it beside two other well-documented accounts sharpens what is distinctive about the Śaiva position specifically.</p>
   <table class="cm-table">
-    <tr><th>Śiva Sūtra</th><th>Traditional Claim</th><th>Cautious Cognitive-Science Parallel</th></tr>
-    <tr><td>1.2 — jñānaṁ bandhaḥ</td><td>Fragmenting cognition constructs bondage</td><td>Self-models are constructed, ongoing predictive constructions rather than perceived, pre-given facts</td></tr>
-    <tr><td>1.3 — yoni-vargaḥ kalā-śarīram</td><td>The bound self is an assembled composite of finite powers</td><td>The sense of a unified self arises from the integration of multiple, separable cognitive and interoceptive sub-processes</td></tr>
-    <tr><td>1.5 — udyamo bhairavaḥ</td><td>Sudden, unprompted upsurge of recognition</td><td>Spontaneous, non-effortful shifts of attentional and arousal state, distinct from sustained goal-directed attention</td></tr>
-    <tr><td>2.1 — cittaṁ mantraḥ</td><td>The (purified) mind itself is mantra</td><td>Internally generated verbal/attentional loops shape, and are shaped by, sustained states of focused cognition</td></tr>
+    <tr><th>Tradition</th><th>Name of Mechanism</th><th>Character of the Mechanism</th><th>Path Back</th></tr>
+    <tr><td>Śiva Sūtras (Kashmir Śaivism)</td><td>Jñāna (limited, fragmenting cognition), structured by Mātṛkā</td><td>A positive, structured act of knowing the world piece by piece; the same phonemic structure responsible for cosmogony</td><td>Recognition (pratyabhijñā) of the same structure, without discarding it</td></tr>
+    <tr><td>Advaita Vedānta</td><td>Avidyā (beginningless cosmic ignorance)</td><td>A superimposition (adhyāsa) of the unreal upon the real, requiring no single triggering event</td><td>Sustained epistemic discipline — hearing, reflection, and repeated meditation (śravaṇa-manana-nididhyāsana)</td></tr>
+    <tr><td>Abhidharma Buddhism</td><td>Avidyā as the first link of dependent origination (pratītyasamutpāda)</td><td>A causally conditioned, serial process rather than a single structural fact; no underlying self is posited to be fragmented</td><td>Cessation of craving and the causal chain through the eightfold path</td></tr>
+    <tr><td>Bhartṛhari's grammatical philosophy</td><td>Vaikharī-level distortion of an already-complete paśyantī-level sphoṭa</td><td>A descent through graded levels of speech, with error entering at the more externalised, sequential stages</td><td>Recovery of the sphoṭa's unity through refined linguistic and yogic discipline</td></tr>
   </table>
-  <p>The caution this paper insists on throughout: a structural resemblance between two vocabularies is not a demonstration that either vocabulary explains the other. The Śiva Sūtras make a soteriological claim (recognition liberates); cognitive science makes a descriptive and predictive claim (models predict behaviour and report). The two claims are not translations of one another, even where their structural shape rhymes.</p>
+  <p>What the table is meant to make visible is not that these four accounts are secretly the same account in different vocabularies — this paper takes no position on that stronger claim — but that each locates the "trouble" at a different structural joint: a mode of cognition (Śaiva), a beginningless superimposition (Advaita), a causal chain with no independent self at either end (Buddhist), and a level-specific linguistic descent (Bhartṛhari). The four are not obviously commensurable, and treating them as if they were would flatten precisely the distinctions that make comparative work on this material worthwhile in the first place.</p>
 
-  <h3 class="cm-h3">III. Neurological Register</h3>
-  <span class="cm-register-tag">Physiological Plausibility, Not Textual Content</span>
-  <div class="cm-verse-block">
-    <span class="cm-deva">चित्तं मन्त्रः</span>
-    <span class="cm-translit">cittaṁ mantraḥ</span>
-    <span class="cm-gloss">2.1 — "The (purified) mind is mantra."</span>
-  </div>
-  <p>Śāktopāya's opening sūtra collapses an apparent distinction — between the mind that recites and the mantra that is recited — the moment the mind is sufficiently purified (śuddha) of the ordinary subject-object split 1.2 describes. Read alongside the general physiological literature on paced, rhythmic vocalisation (a literature concerned with breath-rate entrainment and vagally-mediated autonomic shifts, not with Sanskrit specifically), one can propose, cautiously, that sustained mantra-repetition may recruit some of the same general slow-breathing and attentional-stabilisation mechanisms documented for other paced-repetition practices across contemplative traditions worldwide. This paper states plainly that no claim is made here for any effect specific to Sanskrit phonemes as opposed to rhythmic vocalisation generally; the text's own claim (cittaṁ mantraḥ) is about identity of mind and mantra in a purified state, a claim operating in a register physiological measurement does not, on its own methods, confirm or disconfirm.</p>
-
-  <h3 class="cm-h3">IV. Medical / Therapeutic-Historical Register</h3>
-  <span class="cm-register-tag">Traditional Framing, Documented Cautiously</span>
-  <p>Distinct from the neurological register above — which concerns general physiological mechanism — this register concerns how the Śiva Sūtras' broader mantra-and-nāda framework was historically situated alongside classical Indian medical (Āyurvedic) theory, particularly in later syncretic traditions of Nāda-Cikitsā (sound-therapy) that drew on Śaiva mantra-science for their theoretical vocabulary of prāṇa, nāḍī, and the subtle body. Historically, such traditions proposed that specific bīja-recitations, correlated with specific cakras and elements, could be therapeutically applied to specific bodily and mental conditions. This paper records that framing as a documented historical fact about how these traditions understood themselves, while noting explicitly that contemporary controlled clinical evidence for such specific correlations remains, to this paper's knowledge, limited and is not something this paper is in a position to evaluate or endorse as medical guidance; readers with a genuine clinical question should consult a qualified physician rather than a historical-doctrinal source such as this one.</p>
-
-  <h3 class="cm-h3">V. Metaphorical Register</h3>
-  <span class="cm-register-tag">The Theatrical Cluster</span>
-  <div class="cm-verse-block">
-    <span class="cm-deva">आत्मा नर्तकः । रङ्गोऽन्तरात्मा । प्रेक्षकाणीन्द्रियाणि</span>
-    <span class="cm-translit">ātmā nartakaḥ · raṅgo 'ntarātmā · prekṣakāṇīndriyāṇi</span>
-    <span class="cm-gloss">3.9–3.11 — "The Self is a dancer. The inner self is the stage. The senses are the spectators."</span>
-  </div>
-  <p>Three consecutive sūtras, one metaphor, developed with unusual formal completeness: dancer, stage, and audience are relocated, all three at once, inside a single field. No metaphor in the text is elaborated this systematically, which is itself worth noting — the Śiva Sūtras generally state a principle in a single compressed line and move on; here, uniquely, three lines are given over to fully populating a single theatrical scene, as though the compilers judged this particular image to require its full cast before its force could land. The metaphor's philosophical payload: ordinary experience assumes a triangle (an actor, a stage, a watching audience) held apart by real distances. This cluster collapses the triangle into a single point without denying that a dance, a stage, and spectators still, phenomenally, appear to occur.</p>
-  <div class="cm-verse-block">
-    <span class="cm-deva">शक्तिचक्रसन्धाने विश्वसंहारः</span>
-    <span class="cm-translit">śakti-cakra-sandhāne viśva-saṃhāraḥ</span>
-    <span class="cm-gloss">1.6 (traditional numbering) — "In the joining of the wheel of powers, there is dissolution of the universe."</span>
-  </div>
-  <p>A second governing image: the śakti-cakra as a wheel whose spokes, ordinarily experienced as separated by the gaps between them (the ordinary sense of a world composed of separate, unrelated things), are here said to "join" (sandhāna) — and the moment the spokes are recognised as joined at the hub they were never, in fact, separate from, the entire apparent multiplicity of "the universe" is said to dissolve, not by being destroyed, but by being recognised as never having been many things rather than one wheel.</p>
-
-  <h3 class="cm-h3">VI. Metaphysical Register</h3>
-  <span class="cm-register-tag">The Closing Circuit</span>
-  <div class="cm-verse-block">
-    <span class="cm-deva">आत्मा चित्तम्</span>
-    <span class="cm-translit">ātmā cittam</span>
-    <span class="cm-gloss">3.1 (traditional numbering) — "The (individuated) self is the (finite, discursive) mind."</span>
-  </div>
-  <p>Āṇavopāya opens by naming, with striking metaphysical bluntness, exactly the condition Śāmbhavopāya's opening sūtra (1.1, caitanyam ātmā) exists to reverse: where 1.1 identifies the Self with unconditioned consciousness, 3.1 identifies the (bound) self with citta, the finite, sequential, discursive mind. The two sūtras are not in contradiction — they describe the same single self under two different degrees of recognition, the way a single coin has both a face value stamped on it and a market value it happens, at a given moment, to be trading at. The metaphysical arc of the entire text runs, in effect, from 3.1's diagnosis to 1.1's cure, even though the numbering places the cure first and the diagnosis last — the ordering itself an implicit metaphysical claim that the cure (1.1) is ontologically prior to, and never actually lost during, the diagnosed condition (3.1) it addresses.</p>
+  <h4 class="cm-h4">C. Constructivism Without Anti-Realism</h4>
+  <p>A further philosophical point worth making explicit: the Śiva Sūtras' treatment of the bound self as constructed (via kalā-śarīram, 1.3) does not commit the text to anti-realism about the self as such. The construction claim concerns the bound, individuated self (aṇu); it says nothing against the reality of the Self (ātmā) identified in 1.1 with unconditioned consciousness. This distinction — constructivism about the limited self paired with realism about the ultimate Self — is easy to lose in casual comparison with contemporary constructivist theories of selfhood, which typically do not posit any unconstructed substrate at all. Holding the distinction clearly in view is, this paper suggests, a condition for any comparative reading that wants to avoid quietly importing a physicalist or eliminativist premise the source text does not itself share.</p>
   <div class="cm-infobox">
-    <strong>On the direction of the text's own numbering —</strong> that Śāmbhavopāya (the most direct means) is placed first and Āṇavopāya (the most mediated means) last is traditionally read soteriologically rather than pedagogically: the text presents its highest teaching first, not as a starting point for beginners but as the standard against which the more technique-dependent later sections are to be measured and, eventually, dispensed with.
-  </div>
-</div>
-
-<hr class="cm-div"/>
-
-<!-- ================================================================
-     PART TWO (of this snippet) — ELEVEN CROSS-REFERENCED ŚLOKAS
-     ================================================================ -->
-<div class="cm-block">
-  <div class="cm-kicker">Scholarly Apparatus · Standalone</div>
-  <h2 class="cm-h2">Eleven Ślokas, Cross-Referenced: A Deeper Pass</h2>
-  <div class="cm-deva-title cm-deva">एकादश श्लोकाः — गभीरतरं विवेचनम्</div>
-
-  <p>The eleven verses below revisit, and deepen, the cross-referencing exercise this series undertakes between the Ṛgvedic Vāk-Sūkta, the Vākyapadīya, and the Śiva Sūtras — here read specifically against the six-register analysis just completed, so that each verse is cross-referenced not only to a companion verse but to the particular register (philosophical, cognitive, neurological, medical, metaphorical, or metaphysical) it most sharply illuminates.</p>
-
-  <div class="cm-shloka-list">
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 1.1 · Philosophical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">चैतन्यमात्मा</span>
-        <span class="cm-translit">caitanyam ātmā</span>
-        <span class="cm-gloss">"Consciousness is the Self."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Set against Śiva Sūtra 3.1 (ātmā cittam), this verse forms one half of the diagnosis-cure pair this paper's Section VI names explicitly. Its philosophical force lies in refusing an inferential proof of the self, treating self-evidence itself as an epistemic category the text considers legitimate — a position that puts real pressure on any reading of Indian philosophy as uniformly argument-driven rather than, in places, deliberately non-argumentative by design.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 3.1 · Metaphysical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">आत्मा चित्तम्</span>
-        <span class="cm-translit">ātmā cittam</span>
-        <span class="cm-gloss">"The (bound) self is the (finite) mind."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> The text's closing diagnosis, read backward against its opening cure (1.1). The pairing raises a genuine interpretive question this paper does not resolve: whether the text intends 3.1 as describing a real ontological demotion undergone by consciousness, or as describing only an epistemic misidentification that leaves consciousness itself metaphysically untouched throughout — the difference matters considerably for whether bondage, on this text's own account, is best described as something that happens to the Self or something the Self only appears, from a limited vantage, to undergo.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 1.3 · Scientific / Cognitive Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">योनिवर्गः कलाशरीरम्</span>
-        <span class="cm-translit">yoni-vargaḥ kalā-śarīram</span>
-        <span class="cm-gloss">"The multitude of sources is the body of the kalās."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare Bhartṛhari's own documented layered analysis of linguistic error arising at the vaikharī stage of speech. Both texts propose that what ordinary experience takes as a single, simple entity (a self; a spoken word) is, on closer technical analysis, a composite assembled from multiple distinguishable sub-components — an analytic move this paper's Section II reads as structurally continuous with constructivist accounts of selfhood in contemporary cognitive science, while stressing again that structural continuity is not doctrinal equivalence.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 1.5 · Neurological Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">उद्यमो भैरवः</span>
-        <span class="cm-translit">udyamo bhairavaḥ</span>
-        <span class="cm-gloss">"The (sudden) upsurge is Bhairava."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare Ṛgveda 10.125.3's rāṣṭrī, Vāk's declaration of her own sovereign self-assertion. Both verses figure the ultimate ground as spontaneously, not gradually, self-manifesting — a shared emphasis on suddenness (udyama; the unheralded first-person outburst of the Vāk-Sūkta itself, which begins mid-declaration rather than building toward one) that this paper flags as a stylistic as well as doctrinal continuity worth further comparative attention.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 2.1 · Neurological / Medical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">चित्तं मन्त्रः</span>
-        <span class="cm-translit">cittaṁ mantraḥ</span>
-        <span class="cm-gloss">"The (purified) mind is mantra."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare Śiva Sūtra 1.4, jñānādhiṣṭhānaṁ mātṛkā (documented in this series' companion paper). If Mātṛkā is the basis of ordinary fragmenting knowledge, and the purified mind is here said to be identical with mantra (itself a structured sequence of Mātṛkās), the two sūtras together suggest that the very phonemic structure responsible for bondage becomes, without any change of its own material, the vehicle of its reversal once the mind reciting it is purified — an identity-in-difference this paper's companion piece treats as Mātṛkā doctrine's central hinge.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 1.6 · Metaphorical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">शक्तिचक्रसन्धाने विश्वसंहारः</span>
-        <span class="cm-translit">śakti-cakra-sandhāne viśva-saṃhāraḥ</span>
-        <span class="cm-gloss">"In the joining of the wheel of powers, dissolution of the universe."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare Śiva Sūtra 2.7, mātṛkā-cakra-sambodhaḥ. Both verses invoke a cakra, a wheel, as the operative image, but to different ends: 1.6's wheel dissolves the universe upon being recognised as joined; 2.7's wheel is awakened to, as itself the technique. Read together, they suggest the text distinguishes dissolution (saṃhāra, a Śāmbhavopāya-level event, instantaneous and total) from awakening (sambodha, a Śāktopāya-level event, technique-mediated) as two related but non-identical outcomes of engaging the same underlying phonemic-energetic wheel.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Ṛgveda 10.125.3 · Metaphysical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">अहं राष्ट्री सङ्गमनी वसूनाम्</span>
-        <span class="cm-translit">ahaṁ rāṣṭrī saṅgamanī vasūnām</span>
-        <span class="cm-gloss">"I am the sovereign queen, the gatherer-up of treasures."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Set beside Śiva Sūtra 1.6's viśva-saṃhāraḥ — a striking near-reversal in image: the Ṛgvedic verse has Vāk gathering (saṅgamanī) the treasures the universe is composed of, while the Śaiva sūtra describes those same, now-joined powers dissolving (saṃhāra) the universe they compose. Whether "gathering" and "dissolving" name two temporally distinct moments of a single cosmic process, or two later traditions independently arriving at structurally similar cakra-imagery from unrelated starting points, is left, deliberately, as an open question below.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Ṛgveda 10.125.8 · Philosophical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">मया सो अन्नमत्ति यो विपश्यति यः प्राणिति य ईं शृणोत्युक्तम्</span>
-        <span class="cm-translit">mayā so annam atti yo vipaśyati yaḥ prāṇiti ya īṁ śṛṇoty uktam</span>
-        <span class="cm-gloss">"Through me alone does he eat food who truly sees, who breathes, who hears what is spoken."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Set against Śiva Sūtra 3.11, prekṣakāṇīndriyāṇi. Where the sūtra makes the senses spectators within an inner theatre, the Vedic verse makes Vāk the medium through which the very same sensory functions (sight, breath, hearing) operate at all — the theatre metaphor and the medium metaphor converge on a shared claim: sensory experience is not self-sufficient but everywhere already dependent on a prior, unifying ground it does not itself supply.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Vākyapadīya 1.1 · Philosophical / Metaphysical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">अनादिनिधनं ब्रह्म शब्दतत्त्वं यदक्षरम्</span>
-        <span class="cm-translit">anādi-nidhanaṁ brahma śabda-tattvaṁ yad akṣaram</span>
-        <span class="cm-gloss">"Brahman, without beginning or end, is the imperishable word-principle."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare Śiva Sūtra 1.4, jñānādhiṣṭhānaṁ mātṛkā, and this paper's earlier observation that Bhartṛhari's śabda and the Śiva Sūtras' citi may name a single non-dual ground from within two distinct technical vocabularies. A further, sharper question this deeper pass raises: does Bhartṛhari's grammatical-philosophical akṣara admit the same soteriological urgency the Śaiva citi carries, or is the grammarian's "imperishable" a metaphysical claim without the practical liberative stakes Vasugupta's text everywhere assumes? This paper does not take a settled position.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 3.9–3.11 · Metaphorical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">आत्मा नर्तकः । रङ्गोऽन्तरात्मा । प्रेक्षकाणीन्द्रियाणि</span>
-        <span class="cm-translit">ātmā nartakaḥ · raṅgo 'ntarātmā · prekṣakāṇīndriyāṇi</span>
-        <span class="cm-gloss">"The Self is a dancer. The inner self is the stage. The senses are the spectators."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> Compare this series' documented Nāṭyaśāstra rasa-theory material: where Bharata's aesthetic theory treats the audience's rasa-experience as arising from a real, external performance witnessed by a real, external spectator, this sūtra-cluster collapses that external relation entirely inward. The comparison sharpens rather than dissolves the difference between dramaturgical theory proper (which requires an actual stage and actual audience to function as a discipline) and this cluster's use of theatrical vocabulary as pure metaphysical metaphor, applicable even in the total absence of any literal performance.</p>
-    </div>
-
-    <div class="cm-shloka-entry">
-      <span class="cm-source-tag">Śiva Sūtra 2.7 · Metaphysical / Metaphorical Register</span>
-      <div class="cm-verse-block">
-        <span class="cm-deva">मातृकाचक्रसम्बोधः</span>
-        <span class="cm-translit">mātṛkā-cakra-sambodhaḥ</span>
-        <span class="cm-gloss">"Awakening to the wheel of the Mātṛkās."</span>
-      </div>
-      <p><strong>Cross-reference and deeper reading:</strong> The single verse this deeper pass treats as the structural keystone of the entire eleven — every other verse in this list touches, directly or by extension, on some element (sovereignty, dissolution, mind, dancer, ground) that 2.7 names as already unified within the one phonemic wheel. Read last rather than first, it functions less as one item among eleven than as the frame within which the preceding ten find their coherence.</p>
-    </div>
-
+    <strong>A note on comparative method —</strong> structural parallels of the kind drawn above are offered as aids to clarity, not as evidence of shared lineage or hidden identity between traditions. Two systems can resemble each other at one level of description (e.g., "the self is constructed") while diverging sharply at another (e.g., what, if anything, remains once the construction is seen through).
   </div>
 
-  <h3 class="cm-h3">Ten Unanswered Questions, Restated and Sharpened</h3>
-  <p>Consistent with this series' practice of registering rather than resolving genuine open questions, this deeper pass restates the ten unanswered questions in the specific, sharpened form this section's six-register analysis makes newly visible.</p>
+  <hr class="cm-div"/>
+
+  <h3 class="cm-h3">II. Scientific / Cognitive Register, Extended</h3>
+  <span class="cm-register-tag">Predictive Processing, Attention, and the Limits of the Analogy</span>
+  <h4 class="cm-h4">A. The Free-Energy Framing</h4>
+  <p>Contemporary predictive-processing accounts of cognition (associated in particular with the free-energy principle) propose that the brain continuously generates a hierarchical, generative model of its own causes, updating that model to minimise prediction error rather than passively registering an already-given world. Read cautiously and at the level of gross structure only, this bears a suggestive resemblance to the Śiva Sūtras' account of jñāna as an active, ongoing construction of a bounded self-model rather than a passive perception of a self that already, simply, exists as bounded. The resemblance is structural: both frameworks treat "the self one experiences oneself as" as the output of an ongoing process rather than a discovered fact. The resemblance stops well short of identity: predictive-processing accounts are silent on whether any unconditioned awareness underlies the modelling process, a question the Śiva Sūtras answer affirmatively and treat as the entire point.</p>
+
+  <h4 class="cm-h4">B. Attention Schema Theory and Udyama</h4>
+  <p>A second, narrower parallel: attention schema theory proposes that subjective awareness itself is a simplified internal model the brain constructs of its own attentional processes — a model useful for prediction and control rather than a direct read-out of some further, separate faculty called "consciousness." Udyamo bhairavaḥ (1.5), the sudden, unprompted upsurge the Śiva Sūtras identify with Bhairava, resonates at the level of phenomenological description with reports in attention research of spontaneous, non-effortful shifts in attentional state — shifts that occur without the deliberate, goal-directed allocation of attention modelled by such theories. Whether the tradition's own upsurge is best modelled as an attentional-state transition at all, however, or whether it names something the attention-schema framework has no vocabulary for by design, is a question this paper leaves open rather than adjudicates.</p>
+
+  <h4 class="cm-h4">C. Global Workspace and the Unity Claim</h4>
+  <p>Global workspace theory proposes that conscious access corresponds to information being broadcast widely across otherwise specialised, modular cognitive subsystems, producing the phenomenal unity of a single, integrated experience out of what would otherwise remain fragmentary. The theatrical cluster of Śiva Sūtras 3.9–3.11 (dancer, stage, spectators, all relocated within a single field) invites a loose structural comparison here as well: both the cognitive-science account and the Śaiva metaphor are, in their own idioms, addressing how a seeming multiplicity of processes or roles comes to be experienced as one. The comparison, once again, is offered at the level of shared structural shape and not as a claim that either account explains or validates the other.</p>
+  <div class="cm-infobox">
+    <strong>Where the analogy runs out —</strong> none of the frameworks surveyed above — predictive processing, attention schema theory, or global workspace theory — makes, or is designed to make, any claim about the ontological status of consciousness itself, prakāśa in the Kashmir Śaiva vocabulary. They are functional and computational accounts of how certain cognitive phenomena arise and are organised; the Śiva Sūtras' claim is a metaphysical one about what consciousness fundamentally is. Treating a functional parallel as if it settled the metaphysical question would overstate what either literature, on its own terms, is prepared to claim.
+  </div>
+
+  <hr class="cm-div"/>
+
+  <h3 class="cm-h3">III. Neurological Register, Extended</h3>
+  <span class="cm-register-tag">Physiological Correlates of Contemplative Practice, Held at Arm's Length</span>
+  <h4 class="cm-h4">A. Autonomic Regulation and Paced Recitation</h4>
+  <p>General physiological research on paced, rhythmic breathing and vocalisation — not specific to Sanskrit recitation — documents associations between slow, regular breath cycling and increased heart-rate-variability measures often interpreted as markers of parasympathetic, vagally-mediated regulation. Mantra recitation, chanting, and similarly paced vocal practices across many contemplative traditions worldwide share this general rhythmic structure, which is the most that can cautiously be said in connecting cittaṁ mantraḥ (2.1) to any documented physiological mechanism: the mechanism, where it exists, appears to track the pacing and rhythm of the practice rather than anything specific to the phonemic content of Sanskrit bīja syllables as such.</p>
+
+  <h4 class="cm-h4">B. EEG Correlates in Long-Term Contemplative Practitioners</h4>
+  <p>Separately, a body of general EEG research on long-term meditators (again not specific to any one tradition's technique) has reported associations between sustained contemplative practice and changes in resting-state alpha- and theta-band activity, interpreted variously as markers of relaxed alertness or of altered attentional allocation. Whether such findings would generalise specifically to Mātṛkā-nyāsa or Śāktopāya mantra-practice, as opposed to contemplative practice in general, is not, to this paper's knowledge, a question the existing literature has isolated with adequate controls — a gap flagged again below.</p>
+
+  <h4 class="cm-h4">C. The Limits of Neuroimaging for Soteriological Claims</h4>
+  <p>A final and important caution: even a well-controlled study establishing a specific physiological correlate for Sanskrit mantra recitation — something this paper does not claim currently exists in adequate form — would not, on its own, adjudicate the Śiva Sūtras' own stated aim, which is recognition (pratyabhijñā) of one's identity with unconditioned consciousness, not a particular autonomic or attentional state. A physiological correlate of a practice is not the same thing as a physiological correlate of the metaphysical insight the practice is traditionally said to occasion, and this paper is careful throughout not to conflate the two.</p>
+  <div class="cm-infobox">
+    <strong>Restated caution —</strong> every parallel drawn above is offered as a plausible, general physiological mechanism potentially engaged by the practice's rhythmic and attentional structure — never as evidence for, or against, the tradition's own metaphysical claims about the nature of consciousness, which operate in a register physiological measurement does not, by its own methods, adjudicate either way.
+  </div>
+
+  <h3 class="cm-h3">Five Further Unanswered Questions</h3>
+  <p>Continuing this paper's practice of registering rather than resolving genuine open questions, the extended registers above raise five further questions not covered by the ten already documented earlier in this paper.</p>
   <ol class="cm-qa-list">
-    <li>Whether the text's own internal ordering — Śāmbhavopāya (1.1) placed first, Āṇavopāya (3.1) placed last — reflects a deliberate soteriological argument (the cure stated before the diagnosis) or simply the historical order in which three originally separate technique-corpora were later compiled together under one title.</li>
-    <li>Whether 3.1's ātmā cittam describes a real ontological change undergone by consciousness upon bondage, or only an epistemic misidentification that leaves consciousness itself unchanged — a distinction the text's own seventy-seven aphorisms do not, on their own terms, unambiguously settle.</li>
-    <li>Whether the apparent reversal between Ṛgveda 10.125.3's "gathering" (saṅgamanī) and Śiva Sūtra 1.6's "dissolving" (saṃhāraḥ) of the same cakra-image reflects two stages of one process, two independent traditions converging on similar imagery, or a later Śaiva redeployment of Vedic vocabulary toward a technically distinct end.</li>
-    <li>Whether Bhartṛhari's akṣara (Vākyapadīya 1.1) carries the same liberative, soteriological stakes the Śiva Sūtras attach to citi, or whether the grammarian's imperishable word-principle is a metaphysical postulate serving primarily explanatory rather than liberative purposes within his own system.</li>
-    <li>What, if any, documented historical relationship connects the Śiva Sūtras' theatrical cluster (3.9–3.11) to the independently attested dramaturgical vocabulary of the Nāṭyaśāstra, given that both texts draw on a shared Sanskrit performance vocabulary (naṭa, raṅga, prekṣaka) without either directly citing the other.</li>
-    <li>Whether the general physiological literature on paced, rhythmic vocalisation (invoked cautiously in this paper's neurological register) has been tested specifically for Sanskrit mantra recitation with adequate controls to distinguish a phoneme-specific effect from a general rhythmic-vocalisation effect, and if not, what such a study would need to control for.</li>
-    <li>To what extent later Nāda-Cikitsā traditions' therapeutic correlations between specific bīja-syllables and specific bodily systems represent a continuous technical lineage traceable to the Śiva Sūtras' own vocabulary, versus a later syncretic construction retrospectively presented as continuous with it.</li>
-    <li>Whether the structural parallel this paper draws between kalā-śarīram (1.3) and contemporary constructivist theories of selfhood survives closer scrutiny of the specific enumerated kalās, several of which (time, necessity, limited pervasion) have no straightforward correlate in the cognitive-science literature this paper cites only for its general constructivist orientation.</li>
-    <li>Whether cittaṁ mantraḥ (2.1) is best read as a strict identity claim (mind and mantra are, upon purification, literally one thing) or as a graded claim about increasing resemblance as purification proceeds — a distinction with significant consequences for how the sūtra's relationship to 1.4's jñānādhiṣṭhānaṁ mātṛkā should be understood.</li>
-    <li>Whether the text's traditional revelation-narrative and the modern comparative-religious project of reading it across six registers (as this paper attempts) are, in the end, compatible projects, or whether the six-register method itself imports assumptions about the separability of philosophy, science, medicine, and metaphysics that the text's own ninth-century context did not share and might not recognise as a neutral analytic framework.</li>
+    <li>Whether the structural parallel drawn between jñānaṁ bandhaḥ (1.2) and predictive-processing accounts of self-modelling survives scrutiny of the specific claim that the Śaiva "self-model" is fifty-fold and phonemically structured (via Mātṛkā) — a specificity that has no obvious analogue in the generic self-modelling literature cited for comparison.</li>
+    <li>Whether attention schema theory's account of awareness as itself a constructed model is compatible with, or in tension with, the Śiva Sūtras' claim that consciousness (citi) is not merely modelled but directly, self-evidently real — and whether this tension is one the two frameworks can coherently be held alongside each other despite it.</li>
+    <li>Whether any existing controlled study has isolated a physiological or attentional effect specific to Sanskrit bīja-syllable recitation as distinct from the general rhythmic-vocalisation effect documented across unrelated contemplative traditions, and if not, what such a study would need to control for to make the distinction empirically meaningful.</li>
+    <li>Whether the four-tradition comparison offered above (Śaiva, Advaita, Buddhist, Bhartṛharian) risks obscuring genuine, documented historical influence and borrowing between these schools by treating them as four independent, freestanding positions rather than as historically interacting and mutually responsive traditions.</li>
+    <li>Whether global workspace theory's account of broadcast-based cognitive unity offers any genuine explanatory traction on the Śiva Sūtras' theatrical cluster (3.9–3.11), or whether the resemblance is better described as two unrelated vocabularies converging, for independent reasons, on the shared image of a single unifying "stage."</li>
   </ol>
-
   <div class="cm-infobox">
-    <strong>Note on method —</strong> as with this series' companion paper, the cross-references above are offered as this paper's own synthetic reading connecting distinct textual strata around a shared thematic trajectory, not as a claim that the Ṛgveda, Bhartṛhari, and Vasugupta record direct, textually attested awareness of one another's specific formulations. Sūtra numbering follows commonly cited recensions; readers preparing this material for publication should verify individual sūtra numbers against a critical edition before finalising.
+    <strong>Note on this extended commentary —</strong> the material above supplements, rather than supersedes, this paper's earlier register treatments of the Śiva Sūtras; where the two overlap, this section is intended to add specificity and additional comparative material rather than to restate what has already been established.
   </div>
 </div>
 
 </section>
-<!-- ===================== end Cultural Musings supplement (standalone) ===================== -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses · Part Three · Cultural Musings</title>
-<style>
-  :root{
-    --parchment-bg:#15120e;
-    --parchment-bg-raised:#1c1712;
-    --parchment-bg-deep:#100d0a;
-    --gold:#c9a24b;
-    --gold-bright:#e0bb62;
-    --rust:#9c5a3c;
-    --ink:#e9dfc9;
-    --ink-dim:#b8ab8e;
-    --hairline:rgba(201,162,75,0.28);
-    --max-w:1040px;
-  }
-  *{box-sizing:border-box;}
-  body{
-    margin:0;
-    background:var(--parchment-bg);
-    color:var(--ink);
-    font-family:"Cormorant Garamond","Crimson Text",Georgia,serif;
-    line-height:1.75;
-  }
-  .deva{font-family:"Noto Sans Devanagari","Sanskrit 2003",serif;}
-
-  /* ---------- Masthead ---------- */
-  header.cm-masthead{
-    background:var(--parchment-bg-deep);
-    border-bottom:1px solid var(--hairline);
-    padding:2.2rem 1.5rem 1.6rem 1.5rem;
-    text-align:center;
-  }
-  header.cm-masthead .cm-eyebrow{
-    text-transform:uppercase;
-    letter-spacing:0.18em;
-    font-size:0.74rem;
-    color:var(--gold);
-    font-family:Georgia,serif;
-    margin-bottom:0.6rem;
-  }
-  header.cm-masthead h1{
-    font-size:2.4rem;
-    font-weight:600;
-    color:var(--gold-bright);
-    margin:0 0 0.4rem 0;
-  }
-  header.cm-masthead .cm-subtitle{
-    font-size:1.15rem;
-    color:var(--ink-dim);
-    font-style:italic;
-  }
-
-  /* ---------- Breadcrumb / Series nav ---------- */
-  nav.cm-breadcrumb{
-    max-width:var(--max-w);
-    margin:0 auto;
-    padding:0.9rem 1.5rem;
-    font-size:0.92rem;
-    color:var(--ink-dim);
-    border-bottom:1px solid var(--hairline);
-  }
-  nav.cm-breadcrumb a{ color:var(--gold); text-decoration:none; }
-  nav.cm-breadcrumb a:hover{ color:var(--gold-bright); text-decoration:underline; }
-  nav.cm-breadcrumb .sep{ margin:0 0.4rem; color:var(--rust); }
-
-  nav.cm-series-nav{
-    max-width:var(--max-w);
-    margin:0 auto;
-    padding:0.8rem 1.5rem 1.4rem 1.5rem;
-    display:flex;
-    flex-wrap:wrap;
-    gap:0.5rem;
-    border-bottom:1px solid var(--hairline);
-  }
-  nav.cm-series-nav a{
-    display:inline-block;
-    padding:0.35rem 0.9rem;
-    border:1px solid var(--hairline);
-    border-radius:999px;
-    font-size:0.85rem;
-    color:var(--ink-dim);
-    text-decoration:none;
-  }
-  nav.cm-series-nav a.current{
-    color:var(--parchment-bg);
-    background:var(--gold);
-    border-color:var(--gold);
-  }
-  nav.cm-series-nav a:hover:not(.current){ border-color:var(--gold); color:var(--gold-bright); }
-
-  /* ---------- Main container ---------- */
-  main{
-    max-width:var(--max-w);
-    margin:0 auto;
-    padding:2.5rem 1.5rem 4rem 1.5rem;
-  }
-
-  /* ---------- Infobox ---------- */
-  .cm-infobox{
-    background:var(--parchment-bg-raised);
-    border:1px solid var(--hairline);
-    border-radius:6px;
-    padding:1.3rem 1.6rem;
-    margin:0 0 2.2rem 0;
-    font-size:1.02rem;
-  }
-  .cm-infobox strong{ color:var(--gold); }
-  .cm-infobox table{ width:100%; border-collapse:collapse; }
-  .cm-infobox td{ padding:0.3rem 0.6rem 0.3rem 0; vertical-align:top; }
-  .cm-infobox td:first-child{ color:var(--rust); text-transform:uppercase; font-size:0.72rem; letter-spacing:0.06em; width:9rem; font-family:Georgia,serif; }
-
-  /* ---------- Section blocks ---------- */
-  .cm-block{ border-top:1px solid var(--hairline); padding-top:2.4rem; margin-top:3rem; }
-  .cm-block:first-of-type{ border-top:none; padding-top:0; margin-top:0; }
-  .cm-kicker{ text-transform:uppercase; letter-spacing:0.14em; font-size:0.78rem; color:var(--gold); font-family:Georgia,serif; margin-bottom:0.6rem; }
-  h2.cm-h2{ font-size:2rem; font-weight:600; color:var(--gold-bright); margin:0 0 0.3rem 0; }
-  h3.cm-h3{ font-size:1.4rem; color:var(--gold); margin:2.2rem 0 0.6rem 0; font-weight:600; }
-  h4.cm-h4{ font-size:1.12rem; color:var(--ink); border-left:3px solid var(--rust); padding-left:0.7rem; margin:1.6rem 0 0.5rem 0; }
-  p{ margin:0 0 1rem 0; font-size:1.14rem; }
-  .cm-lede{ font-size:1.28rem; color:var(--ink-dim); font-style:italic; }
-
-  /* ---------- Verse / Lakṣaṇa cards ---------- */
-  .cm-verse-block{ background:var(--parchment-bg-raised); border-left:3px solid var(--gold); padding:1.1rem 1.5rem; margin:1.2rem 0; border-radius:0 6px 6px 0; }
-  .cm-verse-block .deva{ font-size:1.35rem; color:var(--gold-bright); display:block; margin-bottom:0.4rem; }
-  .cm-verse-block .cm-translit{ font-style:italic; color:var(--ink-dim); display:block; margin-bottom:0.5rem; }
-  .cm-lakshana-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:0.9rem; margin:1rem 0 1.8rem 0; }
-  .cm-lp-card{ border:1px solid var(--hairline); border-radius:6px; padding:0.9rem 1.1rem; background:var(--parchment-bg-raised); }
-  .cm-lp-card .cm-lp-label{ color:var(--rust); text-transform:uppercase; letter-spacing:0.08em; font-size:0.72rem; font-family:Georgia,serif; display:block; margin-bottom:0.3rem; }
-
-  /* ---------- Tab widget (forty-two lenses) ---------- */
-  .cm-tabs{ margin:1.6rem 0 2.4rem 0; }
-  .cm-tab-buttons{ display:flex; flex-wrap:wrap; gap:0.4rem; margin-bottom:1rem; }
-  .cm-tab-btn{
-    background:var(--parchment-bg-raised);
-    border:1px solid var(--hairline);
-    color:var(--ink-dim);
-    padding:0.4rem 0.9rem;
-    border-radius:6px;
-    font-size:0.86rem;
-    cursor:pointer;
-    font-family:Georgia,serif;
-  }
-  .cm-tab-btn.active{ background:var(--gold); color:var(--parchment-bg); border-color:var(--gold); }
-  .cm-tab-panel{ display:none; background:var(--parchment-bg-raised); border:1px solid var(--hairline); border-radius:6px; padding:1.4rem 1.6rem; }
-  .cm-tab-panel.active{ display:block; }
-
-  /* ---------- Table ---------- */
-  table.cm-table{ width:100%; border-collapse:collapse; margin:1.4rem 0 2rem 0; font-size:1rem; }
-  table.cm-table th, table.cm-table td{ border:1px solid var(--hairline); padding:0.65rem 0.8rem; text-align:left; vertical-align:top; }
-  table.cm-table th{ color:var(--gold); background:rgba(201,162,75,0.06); }
-
-  /* ---------- Divider ---------- */
-  hr.cm-div{ border:none; text-align:center; margin:2.6rem 0; color:var(--gold); font-size:1.1rem; letter-spacing:0.5rem; }
-  hr.cm-div::after{ content:"❖ ❖ ❖"; }
-
-  /* ---------- Footnotes / Bibliography / Glossary ---------- */
-  .cm-footnotes{ font-size:0.92rem; color:var(--ink-dim); border-top:1px solid var(--hairline); padding-top:1.6rem; margin-top:2.6rem; }
-  .cm-footnotes ol{ padding-left:1.2rem; }
-  .cm-bibliography{ font-size:0.98rem; color:var(--ink-dim); }
-  .cm-bibliography ul{ list-style:none; padding:0; }
-  .cm-bibliography li{ padding:0.5rem 0; border-bottom:1px solid var(--hairline); }
-  .cm-glossary-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:0.8rem; }
-  .cm-glossary-entry{ background:var(--parchment-bg-raised); border:1px solid var(--hairline); border-radius:6px; padding:0.8rem 1rem; }
-  .cm-glossary-entry .deva{ color:var(--gold-bright); font-size:1.1rem; display:block; }
-
-  /* ---------- Closing editorial note ---------- */
-  .cm-editorial-close{
-    margin-top:3rem;
-    padding:1.6rem 1.8rem;
-    background:var(--parchment-bg-raised);
-    border:1px solid var(--hairline);
-    border-left:3px solid var(--rust);
-    border-radius:0 6px 6px 0;
-    font-size:1.08rem;
-  }
-  .cm-editorial-close .cm-close-tag{
-    display:block;
-    margin-top:0.9rem;
-    font-size:0.82rem;
-    text-transform:uppercase;
-    letter-spacing:0.08em;
-    color:var(--rust);
-    font-style:normal;
-    font-family:Georgia,serif;
-  }
-
-  footer.cm-footer{
-    max-width:var(--max-w);
-    margin:0 auto;
-    padding:2rem 1.5rem 3rem 1.5rem;
-    border-top:1px solid var(--hairline);
-    font-size:0.85rem;
-    color:var(--ink-dim);
-    text-align:center;
-  }
-</style>
-</head>
-<body>
-
-<header class="cm-masthead">
-  <div class="cm-eyebrow">Series A Extended · Cultural Musings</div>
-  <h1>Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses</h1>
-  <div class="cm-subtitle">Part Three — the Śiva Sūtra hermeneutic in full expansion</div>
-</header>
-
-<nav class="cm-breadcrumb">
-  <a href="/">Cultural Musings</a><span class="sep">/</span><a href="/series-a-extended/">Series A Extended</a><span class="sep">/</span>Part Three
-</nav>
-
-<nav class="cm-series-nav">
-  <a href="#part-one">Part One · Śabdabrahman</a>
-  <a href="#part-two">Part Two · Sphoṭa</a>
-  <a href="#" class="current">Part Three · Forty-Two Lenses</a>
-  <a href="#part-four">Part Four · Mātṛkā</a>
-  <a href="#part-five">Part Five · Nyāsa</a>
-  <a href="#part-six">Part Six · Kuṇḍalinī</a>
-</nav>
-
-<main>
-<!-- ============================================================
-     CLOSING BLOCK — do not move above the inserted content.
-     ============================================================ -->
-<div class="cm-editorial-close">
-  <b>This extension's eighteen panels, together with its Aṣṭamātṛkā table and its Mātṛkā–Mālinī ontology, complete the depth this addendum's own five sections opened: vibrational reality is now documented in full, the four levels of speech are now named individually, the eight mothers are now documented one by one, and the Āgamic ontology of Mātṛkā and Mālinī together closes the doctrine's own textual foundation.</b>
-  <span class="cm-close-tag">— Second Part · Extended Treatment · Editorial Framework</span>
-</div>
-
-</main>
-
-<footer class="cm-footer">
-  Cultural Musings · Series A Extended · Part Three — Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses
-</footer>
-<!-- ===================================================================
-     Cultural Musings — Injectable Supplement (Closing Apparatus)
-     Six Universal Ślokas · Final Synthesis · Bibliography · Glossary
-     Paste this block after the eleven-ślokas section and before the
-     closing editorial-close <b> block.
-     Self-contained: scoped styles under #cm-mss3-root.
-     =================================================================== -->
 <section id="cm-mss3-root">
 <style>
-  #cm-mss3-root {
-    --parchment-bg: #15120e;
-    --parchment-bg-raised: #1c1712;
-    --gold: #c9a24b;
-    --gold-bright: #e0bb62;
-    --rust: #9c5a3c;
-    --ink: #e9dfc9;
-    --ink-dim: #b8ab8e;
-    --hairline: rgba(201,162,75,0.28);
-    background: var(--parchment-bg);
-    color: var(--ink);
-    font-family: "Cormorant Garamond","Crimson Text",Georgia,serif;
-    line-height: 1.75;
-    padding: 3.5rem 1.5rem;
-    max-width: 980px;
-    margin: 0 auto;
-  }
+  #cm-mss3-root { --parchment-bg: #15120e; --parchment-bg-raised: #1c1712; --gold: #c9a24b; --gold-bright: #e0bb62; --rust: #9c5a3c; --ink: #e9dfc9; --ink-dim: #b8ab8e; --hairline: rgba(201,162,75,0.28); background: var(--parchment-bg); color: var(--ink); font-family: "Cormorant Garamond","Crimson Text",Georgia,serif; line-height: 1.75; padding: 3.5rem 1.5rem; max-width: 980px; margin: 0 auto; }
   #cm-mss3-root .cm-deva { font-family: "Noto Sans Devanagari","Sanskrit 2003",serif; }
   #cm-mss3-root .cm-block { border-top: 1px solid var(--hairline); padding-top: 2.5rem; margin-top: 3rem; }
   #cm-mss3-root .cm-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; }
@@ -1290,9 +894,9 @@
   <div class="cm-kicker">White Paper · Concluding Synthesis</div>
   <h2 class="cm-h2">Final Synthesis</h2>
 
-  <p>Across its three preceding movements — Mātṛkā's ontology of the phoneme, the six-register hermeneutic of the Śiva Sūtras, and the eleven cross-referenced ślokas linking Ṛgveda, Bhartṛhari, and Vasugupta — this paper has argued a single, cumulative thesis: that sound, in the specific technical sense the tradition calls Vāk, is not a late-arriving instrument pressed into service by a world that would otherwise exist unchanged without it, but the very medium through which that world first becomes articulate at all. The Sanskrit alphabet's fifty phonemes are, on this account, neither arbitrary nor merely useful; they are constitutive, cosmogonic, and — in the precise sense Śiva Sūtra 1.4 and 2.7 together establish — reversible: the identical mechanism responsible for the fragmentation of consciousness into a bounded self is, without requiring any new instrument, also the mechanism of that fragmentation's undoing.</p>
-  <p>The six-register reading of the Śiva Sūtras was undertaken not to reduce the text's soteriological claims to any one of philosophy, cognitive science, neurology, traditional medicine, metaphor, or metaphysics, but to demonstrate that the text survives, and rewards, examination from all six without collapsing into any single one of them — a mark, this paper suggests, of a text operating at a level of generality most single-register scholarship is not equipped to register in full. The eleven and, now, six ślokas gathered across this paper's sections are offered as textual evidence for this claim rather than as decoration upon it: each cross-reference specifies, as precisely as the available textual record allows, where one tradition's vocabulary meets another's without either dissolving into the other.</p>
-  <p>What remains genuinely open — recorded across this paper's twenty accumulated unanswered questions — is not whether these traditions speak to one another (the textual record establishes that they do, at minimum, share a densely overlapping vocabulary) but how confidently the historical, cognitive, and physiological dimensions of that shared vocabulary can be specified without over-claiming certainty the current state of scholarship does not yet support. This paper closes, accordingly, not with a settled conclusion but with a documented architecture — sovereignty, ground, totality, identity, mechanism, return — within which future, more specialised work on any single joint of that architecture can be situated.</p>
+  <p>Across its preceding movements — Mātṛkā's ontology of the phoneme, the five-register hermeneutic of the Śiva Sūtras and its extended commentary, and the eleven cross-referenced ślokas linking Ṛgveda, Bhartṛhari, and Vasugupta — this paper has argued a single, cumulative thesis: that sound, in the specific technical sense the tradition calls Vāk, is not a late-arriving instrument pressed into service by a world that would otherwise exist unchanged without it, but the very medium through which that world first becomes articulate at all. The Sanskrit alphabet's fifty phonemes are, on this account, neither arbitrary nor merely useful; they are constitutive, cosmogonic, and — in the precise sense Śiva Sūtra 1.4 and 2.7 together establish — reversible: the identical mechanism responsible for the fragmentation of consciousness into a bounded self is, without requiring any new instrument, also the mechanism of that fragmentation's undoing.</p>
+  <p>The register-by-register reading of the Śiva Sūtras was undertaken not to reduce the text's soteriological claims to any one of philosophy, cognitive science, neurology, metaphor, or metaphysics, but to demonstrate that the text survives, and rewards, examination from each without collapsing into any single one of them — a mark, this paper suggests, of a text operating at a level of generality most single-register scholarship is not equipped to register in full. The eleven and, now, six ślokas gathered across this paper's sections are offered as textual evidence for this claim rather than as decoration upon it: each cross-reference specifies, as precisely as the available textual record allows, where one tradition's vocabulary meets another's without either dissolving into the other.</p>
+  <p>What remains genuinely open — recorded across this paper's fifteen accumulated unanswered questions — is not whether these traditions speak to one another (the textual record establishes that they do, at minimum, share a densely overlapping vocabulary) but how confidently the historical, cognitive, and physiological dimensions of that shared vocabulary can be specified without over-claiming certainty the current state of scholarship does not yet support. This paper closes, accordingly, not with a settled conclusion but with a documented architecture — sovereignty, ground, totality, identity, mechanism, return — within which future, more specialised work on any single joint of that architecture can be situated.</p>
 
   <div class="cm-infobox">
     <strong>Central claim, restated in one sentence —</strong> the Sanskrit phoneme is theorised, across the Ṛgveda, the Vākyapadīya, and the Śiva Sūtras alike, as constitutive rather than descriptive of reality, and the very structure (Mātṛkā) responsible for the ordinary, bound experience of a separate self is held by the Śāktopāya section of the Śiva Sūtras to be, without modification, the instrument of that experience's own recognition and release.
@@ -1335,7 +939,8 @@
       <ul>
         <li>Cultural Musings, Series A Extended, Part One — Śabdabrahman: Vāk as the Ground of Being.</li>
         <li>Cultural Musings, Series A Extended, Part Two — Sphoṭa and the Structure of Meaning.</li>
-        <li>Cultural Musings, Series A Extended, Part Four — Mātṛkā and the Fifty Mothers (companion paper, injectable supplement).</li>
+        <li>Cultural Musings, Series A Extended, Part Four — Mātṛkā and Mālinī: Two Orderings of the Same Fifty Powers.</li>
+        <li>Cultural Musings, Series A Extended, Part Five — The Taxonomy of Nyāsa.</li>
         <li>Cultural Musings, Series A Extended, Part Six — Kuṇḍalinī and the Granthi Doctrine.</li>
       </ul>
     </div>
@@ -1430,97 +1035,7 @@
 </div>
 
 </section>
-<!-- ===================== end Cultural Musings closing apparatus ===================== -->
-<section id="cm-mss4-root"> <style> #cm-mss4-root { --parchment-bg: #15120e; --parchment-bg-raised: #1c1712; --gold: #c9a24b; --gold-bright: #e0bb62; --rust: #9c5a3c; --ink: #e9dfc9; --ink-dim: #b8ab8e; --hairline: rgba(201,162,75,0.28); background: var(--parchment-bg); color: var(--ink); font-family: "Cormorant Garamond","Crimson Text",Georgia,serif; line-height: 1.75; padding: 3.5rem 1.5rem; max-width: 980px; margin: 0 auto; } #cm-mss4-root .cm-deva { font-family: "Noto Sans Devanagari","Sanskrit 2003",serif; } #cm-mss4-root .cm-block { border-top: 1px solid var(--hairline); padding-top: 2.5rem; margin-top: 3rem; } #cm-mss4-root .cm-block:first-of-type { border-top: none; padding-top: 0; margin-top: 0; } #cm-mss4-root .cm-kicker { text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.78rem; color: var(--gold); font-family: Georgia, serif; margin-bottom: 0.6rem; } #cm-mss4-root h2.cm-h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 600; font-size: 2.1rem; color: var(--gold-bright); margin: 0 0 0.3rem 0; } #cm-mss4-root .cm-deva-title { font-size: 1.3rem; color: var(--ink-dim); margin-bottom: 1.6rem; } #cm-mss4-root h3.cm-h3 { font-size: 1.4rem; color: var(--gold); margin: 2.2rem 0 0.6rem 0; font-weight: 600; } #cm-mss4-root h4.cm-h4 { font-size: 1.12rem; color: var(--ink); border-left: 3px solid var(--rust); padding-left: 0.7rem; margin: 1.6rem 0 0.5rem 0; } #cm-mss4-root p { margin: 0 0 1rem 0; font-size: 1.14rem; color: var(--ink); } #cm-mss4-root .cm-lede { font-size: 1.28rem; color: var(--ink-dim); font-style: italic; } #cm-mss4-root .cm-infobox { background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; padding: 1.3rem 1.6rem; margin: 1.4rem 0 2rem 0; font-size: 1.02rem; } #cm-mss4-root .cm-infobox strong { color: var(--gold); } #cm-mss4-root .cm-verse-block { background: var(--parchment-bg-raised); border-left: 3px solid var(--gold); padding: 1.1rem 1.5rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0; } #cm-mss4-root .cm-verse-block .cm-deva { font-size: 1.3rem; color: var(--gold-bright); display:block; margin-bottom:0.4rem; } #cm-mss4-root .cm-verse-block .cm-translit { font-style: italic; color: var(--ink-dim); display:block; margin-bottom:0.5rem; } #cm-mss4-root .cm-verse-block .cm-gloss { color: var(--ink); font-size: 1.02rem; } #cm-mss4-root .cm-register-tag { display:inline-block; background: rgba(156,90,60,0.18); color: var(--gold-bright); border: 1px solid var(--hairline); border-radius: 999px; padding: 0.15rem 0.75rem; font-size: 0.78rem; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 0.8rem; } #cm-mss4-root table.cm-table { width: 100%; border-collapse: collapse; margin: 1.4rem 0 2rem 0; font-size: 1rem; } #cm-mss4-root table.cm-table th, #cm-mss4-root table.cm-table td { border: 1px solid var(--hairline); padding: 0.65rem 0.8rem; text-align: left; vertical-align: top; } #cm-mss4-root table.cm-table th { color: var(--gold); background: rgba(201,162,75,0.06); } #cm-mss4-root .cm-qa-list { list-style: none; padding: 0; margin: 1rem 0 2rem 0; counter-reset: cm-qcounter4 10; } #cm-mss4-root .cm-qa-list li { counter-increment: cm-qcounter4; position: relative; padding: 0.9rem 1.2rem 0.9rem 3rem; margin-bottom: 0.8rem; background: var(--parchment-bg-raised); border: 1px solid var(--hairline); border-radius: 6px; } #cm-mss4-root .cm-qa-list li::before { content: counter(cm-qcounter4); position: absolute; left: 0.9rem; top: 0.85rem; color: var(--gold-bright); font-weight: 700; font-size: 1.1rem; font-family: Georgia, serif; } #cm-mss4-root .cm-source-tag { font-size: 0.82rem; color: var(--rust); text-transform: uppercase; letter-spacing: 0.06em; } #cm-mss4-root hr.cm-div { border: none; text-align: center; margin: 2.6rem 0; color: var(--gold); font-size: 1.1rem; letter-spacing: 0.5rem; } #cm-mss4-root hr.cm-div::after { content: "❖ ❖ ❖"; } </style> <!-- ================================================================ EXTENDED COMMENTARY — PHILOSOPHICAL, SCIENTIFIC, NEUROLOGICAL ================================================================ --> <div class="cm-block"> <div class="cm-kicker">Extended Commentary · Additional Registers</div> <h2 class="cm-h2">Extended Commentary: Philosophical, Scientific, and Neurological Threads Revisited</h2> <div class="cm-deva-title cm-deva">विस्तृतव्याख्या — दार्शनिकं वैज्ञानिकं तन्त्रिकाशास्त्रीयं च</div> <p class="cm-lede">The registers opened earlier in this paper are not exhausted by a single pass. What follows returns to the philosophical, scientific, and neurological threads already introduced, and pulls each somewhat further — not to settle what the earlier sections left open, but to give each register room enough to show its own internal texture rather than standing as a single illustrative paragraph among five or six others.</p> <h3 class="cm-h3">I. Philosophical Register, Extended</h3> <span class="cm-register-tag">Comparative Metaphysics of Self and Bondage</span> <h4 class="cm-h4">A. The Self-Evidencing Problem</h4> <p>Śiva Sūtra 1.1's caitanyam ātmā declines to argue for its own claim, and this refusal is itself philosophically interesting enough to merit separate treatment. Compare the structurally similar move in Husserlian phenomenology, where the transcendental ego is disclosed through the epoché — the bracketing of the natural attitude — rather than inferred from premises about the external world. Both projects share the conviction that the ultimate subject of experience cannot, without circularity, be established by any procedure that already presupposes it as the one doing the establishing. Where the two projects diverge sharply is in what follows from that shared starting point: Husserl's bracketing yields a rigorously described field of intentional structures, offered as a descriptive science of consciousness, while the Śiva Sūtras' caitanyam ātmā is offered as already, in itself, the liberating recognition rather than a preliminary step toward one. The comparison is worth holding onto precisely because it clarifies, by contrast, how much weight the Śaiva text places on recognition (pratyabhijñā) as sufficient in itself — a philosophical commitment phenomenology, for its own methodological reasons, does not make.</p> <h4 class="cm-h4">B. Three Accounts of the Fragmenting Mechanism</h4> <p>Jñānaṁ bandhaḥ (1.2) is not the only classical Indian account of how an undivided field of experience comes to seem fragmented into a bounded self confronting separate objects. Placing it beside two other well-documented accounts sharpens what is distinctive about the Śaiva position specifically.</p> <table class="cm-table"> <tr><th>Tradition</th><th>Name of Mechanism</th><th>Character of the Mechanism</th><th>Path Back</th></tr> <tr><td>Śiva Sūtras (Kashmir Śaivism)</td><td>Jñāna (limited, fragmenting cognition), structured by Mātṛkā</td><td>A positive, structured act of knowing the world piece by piece; the same phonemic structure responsible for cosmogony</td><td>Recognition (pratyabhijñā) of the same structure, without discarding it</td></tr> <tr><td>Advaita Vedānta</td><td>Avidyā (beginningless cosmic ignorance)</td><td>A superimposition (adhyāsa) of the unreal upon the real, requiring no single triggering event</td><td>Sustained epistemic discipline — hearing, reflection, and repeated meditation (śravaṇa-manana-nididhyāsana)</td></tr> <tr><td>Abhidharma Buddhism</td><td>Avidyā as the first link of dependent origination (pratītyasamutpāda)</td><td>A causally conditioned, serial process rather than a single structural fact; no underlying self is posited to be fragmented</td><td>Cessation of craving and the causal chain through the eightfold path</td></tr> <tr><td>Bhartṛhari's grammatical philosophy</td><td>Vaikharī-level distortion of an already-complete paśyantī-level sphoṭa</td><td>A descent through graded levels of speech, with error entering at the more externalised, sequential stages</td><td>Recovery of the sphoṭa's unity through refined linguistic and yogic discipline</td></tr> </table> <p>What the table is meant to make visible is not that these four accounts are secretly the same account in different vocabularies — this paper takes no position on that stronger claim — but that each locates the "trouble" at a different structural joint: a mode of cognition (Śaiva), a beginningless superimposition (Advaita), a causal chain with no independent self at either end (Buddhist), and a level-specific linguistic descent (Bhartṛhari). The four are not obviously commensurable, and treating them as if they were would flatten precisely the distinctions that make comparative work on this material worthwhile in the first place.</p> <h4 class="cm-h4">C. Constructivism Without Anti-Realism</h4> <p>A further philosophical point worth making explicit: the Śiva Sūtras' treatment of the bound self as constructed (via kalā-śarīram, 1.3) does not commit the text to anti-realism about the self as such. The construction claim concerns the bound, individuated self (aṇu); it says nothing against the reality of the Self (ātmā) identified in 1.1 with unconditioned consciousness. This distinction — constructivism about the limited self paired with realism about the ultimate Self — is easy to lose in casual comparison with contemporary constructivist theories of selfhood, which typically do not posit any unconstructed substrate at all. Holding the distinction clearly in view is, this paper suggests, a condition for any comparative reading that wants to avoid quietly importing a physicalist or eliminativist premise the source text does not itself share.</p> <div class="cm-infobox"> <strong>A note on comparative method —</strong> structural parallels of the kind drawn above are offered as aids to clarity, not as evidence of shared lineage or hidden identity between traditions. Two systems can resemble each other at one level of description (e.g., "the self is constructed") while diverging sharply at another (e.g., what, if anything, remains once the construction is seen through). </div> <hr class="cm-div"/> <h3 class="cm-h3">II. Scientific / Cognitive Register, Extended</h3> <span class="cm-register-tag">Predictive Processing, Attention, and the Limits of the Analogy</span> <h4 class="cm-h4">A. The Free-Energy Framing</h4> <p>Contemporary predictive-processing accounts of cognition (associated in particular with the free-energy principle) propose that the brain continuously generates a hierarchical, generative model of its own causes, updating that model to minimise prediction error rather than passively registering an already-given world. Read cautiously and at the level of gross structure only, this bears a suggestive resemblance to the Śiva Sūtras' account of jñāna as an active, ongoing construction of a bounded self-model rather than a passive perception of a self that already, simply, exists as bounded. The resemblance is structural: both frameworks treat "the self one experiences oneself as" as the output of an ongoing process rather than a discovered fact. The resemblance stops well short of identity: predictive-processing accounts are silent on whether any unconditioned awareness underlies the modelling process, a question the Śiva Sūtras answer affirmatively and treat as the entire point.</p> <h4 class="cm-h4">B. Attention Schema Theory and Udyama</h4> <p>A second, narrower parallel: attention schema theory proposes that subjective awareness itself is a simplified internal model the brain constructs of its own attentional processes — a model useful for prediction and control rather than a direct read-out of some further, separate faculty called "consciousness." Udyamo bhairavaḥ (1.5), the sudden, unprompted upsurge the Śiva Sūtras identify with Bhairava, resonates at the level of phenomenological description with reports in attention research of spontaneous, non-effortful shifts in attentional state — shifts that occur without the deliberate, goal-directed allocation of attention modelled by such theories. Whether the tradition's own upsurge is best modelled as an attentional-state transition at all, however, or whether it names something the attention-schema framework has no vocabulary for by design, is a question this paper leaves open rather than adjudicates.</p> <h4 class="cm-h4">C. Global Workspace and the Unity Claim</h4> <p>Global workspace theory proposes that conscious access corresponds to information being broadcast widely across otherwise specialised, modular cognitive subsystems, producing the phenomenal unity of a single, integrated experience out of what would otherwise remain fragmentary. The theatrical cluster of Śiva Sūtras 3.9–3.11 (dancer, stage, spectators, all relocated within a single field) invites a loose structural comparison here as well: both the cognitive-science account and the Śaiva metaphor are, in their own idioms, addressing how a seeming multiplicity of processes or roles comes to be experienced as one. The comparison, once again, is offered at the level of shared structural shape and not as a claim that either account explains or validates the other.</p> <div class="cm-infobox"> <strong>Where the analogy runs out —</strong> none of the frameworks surveyed above — predictive processing, attention schema theory, or global workspace theory — makes, or is designed to make, any claim about the ontological status of consciousness itself, prakāśa in the Kashmir Śaiva vocabulary. They are functional and computational accounts of how certain cognitive phenomena arise and are organised; the Śiva Sūtras' claim is a metaphysical one about what consciousness fundamentally is. Treating a functional parallel as if it settled the metaphysical question would overstate what either literature, on its own terms, is prepared to claim. </div> <hr class="cm-div"/> <h3 class="cm-h3">III. Neurological Register, Extended</h3> <span class="cm-register-tag">Physiological Correlates of Contemplative Practice, Held at Arm's Length</span> <h4 class="cm-h4">A. Autonomic Regulation and Paced Recitation</h4> <p>General physiological research on paced, rhythmic breathing and vocalisation — not specific to Sanskrit recitation — documents associations between slow, regular breath cycling and increased heart-rate-variability measures often interpreted as markers of parasympathetic, vagally-mediated regulation. Mantra recitation, chanting, and similarly paced vocal practices across many contemplative traditions worldwide share this general rhythmic structure, which is the most that can cautiously be said in connecting cittaṁ mantraḥ (2.1) to any documented physiological mechanism: the mechanism, where it exists, appears to track the pacing and rhythm of the practice rather than anything specific to the phonemic content of Sanskrit bīja syllables as such.</p> <h4 class="cm-h4">B. EEG Correlates in Long-Term Contemplative Practitioners</h4> <p>Separately, a body of general EEG research on long-term meditators (again not specific to any one tradition's technique) has reported associations between sustained contemplative practice and changes in resting-state alpha- and theta-band activity, interpreted variously as markers of relaxed alertness or of altered attentional allocation. Whether such findings would generalise specifically to Mātṛkā-nyāsa or Śāktopāya mantra-practice, as opposed to contemplative practice in general, is not, to this paper's knowledge, a question the existing literature has isolated with adequate controls — a gap already flagged in this paper's earlier unanswered-questions list and restated below with additional specificity.</p> <h4 class="cm-h4">C. The Limits of Neuroimaging for Soteriological Claims</h4> <p>A final and important caution: even a well-controlled study establishing a specific physiological correlate for Sanskrit mantra recitation — something this paper does not claim currently exists in adequate form — would not, on its own, adjudicate the Śiva Sūtras' own stated aim, which is recognition (pratyabhijñā) of one's identity with unconditioned consciousness, not a particular autonomic or attentional state. A physiological correlate of a practice is not the same thing as a physiological correlate of the metaphysical insight the practice is traditionally said to occasion, and this paper is careful throughout not to conflate the two.</p> <div class="cm-infobox"> <strong>Restated caution —</strong> as with the shorter neurological register offered earlier in this paper, every parallel drawn above is offered as a plausible, general physiological mechanism potentially engaged by the practice's rhythmic and attentional structure — never as evidence for, or against, the tradition's own metaphysical claims about the nature of consciousness, which operate in a register physiological measurement does not, by its own methods, adjudicate either way. </div> <h3 class="cm-h3">Five Further Unanswered Questions</h3> <p>Continuing this paper's practice of registering rather than resolving genuine open questions, the extended registers above raise five further questions not covered by the twenty already documented earlier in this paper.</p> <ol class="cm-qa-list"> <li>Whether the structural parallel drawn between jñānaṁ bandhaḥ (1.2) and predictive-processing accounts of self-modelling survives scrutiny of the specific claim that the Śaiva "self-model" is fifty-fold and phonemically structured (via Mātṛkā) — a specificity that has no obvious analogue in the generic self-modelling literature cited for comparison.</li> <li>Whether attention schema theory's account of awareness as itself a constructed model is compatible with, or in tension with, the Śiva Sūtras' claim that consciousness (citi) is not merely modelled but directly, self-evidently real — and whether this tension is one the two frameworks can coherently be held alongside each other despite it.</li> <li>Whether any existing controlled study has isolated a physiological or attentional effect specific to Sanskrit bīja-syllable recitation as distinct from the general rhythmic-vocalisation effect documented across unrelated contemplative traditions, and if not, what such a study would need to control for to make the distinction empirically meaningful.</li> <li>Whether the four-tradition comparison offered above (Śaiva, Advaita, Buddhist, Bhartṛharian) risks obscuring genuine, documented historical influence and borrowing between these schools by treating them as four independent, freestanding positions rather than as historically interacting and mutually responsive traditions.</li> <li>Whether global workspace theory's account of broadcast-based cognitive unity offers any genuine explanatory traction on the Śiva Sūtras' theatrical cluster (3.9–3.11), or whether the resemblance is better described as two unrelated vocabularies converging, for independent reasons, on the shared image of a single unifying "stage."</li> </ol> <div class="cm-infobox"> <strong>Note on this extended commentary —</strong> the material above supplements, rather than supersedes, this paper's earlier five- and six-register treatments of the Śiva Sūtras; where the two overlap, this section is intended to add specificity and additional comparative material rather than to restate what has already been established. </div> </div> </section> <!-- ===================== end extended commentary supplement ===================== -->
-<section id="cm-dup-header-root">
-  <style>
-    #cm-dup-header-root {
-      --parchment-bg-deep: #100d0a;
-      --gold: #c9a24b;
-      --gold-bright: #e0bb62;
-      --rust: #9c5a3c;
-      --ink-dim: #b8ab8e;
-      --hairline: rgba(201,162,75,0.28);
-      --max-w: 1040px;
-      font-family: "Cormorant Garamond","Crimson Text",Georgia,serif;
-    }
-    #cm-dup-header-root header.cm-masthead {
-      background: var(--parchment-bg-deep);
-      border-bottom: 1px solid var(--hairline);
-      padding: 2.2rem 1.5rem 1.6rem 1.5rem;
-      text-align: center;
-    }
-    #cm-dup-header-root header.cm-masthead .cm-eyebrow {
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      font-size: 0.74rem;
-      color: var(--gold);
-      font-family: Georgia, serif;
-      margin-bottom: 0.6rem;
-    }
-    #cm-dup-header-root header.cm-masthead h1 {
-      font-size: 2.4rem;
-      font-weight: 600;
-      color: var(--gold-bright);
-      margin: 0 0 0.4rem 0;
-    }
-    #cm-dup-header-root header.cm-masthead .cm-subtitle {
-      font-size: 1.15rem;
-      color: var(--ink-dim);
-      font-style: italic;
-    }
-    #cm-dup-header-root nav.cm-breadcrumb {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0.9rem 1.5rem;
-      font-size: 0.92rem;
-      color: var(--ink-dim);
-      border-bottom: 1px solid var(--hairline);
-    }
-    #cm-dup-header-root nav.cm-breadcrumb a { color: var(--gold); text-decoration: none; }
-    #cm-dup-header-root nav.cm-breadcrumb a:hover { color: var(--gold-bright); text-decoration: underline; }
-    #cm-dup-header-root nav.cm-breadcrumb .sep { margin: 0 0.4rem; color: var(--rust); }
-    #cm-dup-header-root nav.cm-series-nav {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0.8rem 1.5rem 1.4rem 1.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      border-bottom: 1px solid var(--hairline);
-    }
-    #cm-dup-header-root nav.cm-series-nav a {
-      display: inline-block;
-      padding: 0.35rem 0.9rem;
-      border: 1px solid var(--hairline);
-      border-radius: 999px;
-      font-size: 0.85rem;
-      color: var(--ink-dim);
-      text-decoration: none;
-    }
-    #cm-dup-header-root nav.cm-series-nav a.current {
-      color: var(--parchment-bg-deep);
-      background: var(--gold);
-      border-color: var(--gold);
-    }
-    #cm-dup-header-root nav.cm-series-nav a:hover:not(.current) {
-      border-color: var(--gold);
-      color: var(--gold-bright);
-    }
-  </style>
-
-  <header class="cm-masthead">
-    <div class="cm-eyebrow">Series A Extended · Cultural Musings</div>
-    <h1>Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses</h1>
-    <div class="cm-subtitle">Part Three — the Śiva Sūtra hermeneutic in full expansion</div>
-  </header>
-
-  <nav class="cm-breadcrumb">
-    <a href="/">Cultural Musings</a><span class="sep">/</span><a href="/series-a-extended/">Series A Extended</a><span class="sep">/</span>Part Three
-  </nav>
-</section>
-<!-- ===================== end injectable header/nav duplicate ===================== -->
-  <!-- ===================== PART ONE · ŚABDABRAHMAN ===================== -->
+<!-- ===================== PART ONE · ŚABDABRAHMAN (preview) ===================== -->
 <section id="cm-p1-root">
 <style>
   #cm-p1-root{ --bg:#15120e; --bgr:#1c1712; --gold:#c9a24b; --goldb:#e0bb62; --rust:#9c5a3c; --ink:#e9dfc9; --inkd:#b8ab8e; --hl:rgba(201,162,75,0.28);
@@ -1561,7 +1076,7 @@
 <div class="infobox"><strong>Scope note —</strong> this is a foundational preview section, not the full treatment; a complete Part One would extend through the four levels of Vāk (parā–paśyantī–madhyamā–vaikharī) in the depth this series' later parts model.</div>
 </section>
 
-<!-- ===================== PART TWO · SPHOṬA ===================== -->
+<!-- ===================== PART TWO · SPHOṬA (preview) ===================== -->
 <section id="cm-p2-root">
 <style>
   #cm-p2-root{ --bg:#15120e; --bgr:#1c1712; --gold:#c9a24b; --goldb:#e0bb62; --rust:#9c5a3c; --ink:#e9dfc9; --inkd:#b8ab8e; --hl:rgba(201,162,75,0.28);
@@ -1599,7 +1114,7 @@
 <div class="infobox"><strong>Scope note —</strong> this preview states the doctrine's core distinction (dhvani vs. sphoṭa) and its three-level hierarchy; a full Part Two would extend into the anti-sphoṭa rebuttals and Bhartṛhari's own responses in the depth this series models elsewhere. Sūtra/kārikā numbering for sphoṭa-specific verses varies across editions and is deliberately left unspecified here pending verification against a critical edition.</div>
 </section>
 
-<!-- ===================== PART FOUR · MĀTṚKĀ (NEW ANGLE: MĀTṚKĀ / MĀLINĪ) ===================== -->
+<!-- ===================== PART FOUR · MĀTṚKĀ / MĀLINĪ (preview) ===================== -->
 <section id="cm-p4-root">
 <style>
   #cm-p4-root{ --bg:#15120e; --bgr:#1c1712; --gold:#c9a24b; --goldb:#e0bb62; --rust:#9c5a3c; --ink:#e9dfc9; --inkd:#b8ab8e; --hl:rgba(201,162,75,0.28);
@@ -1617,7 +1132,7 @@
   #cm-p4-root .infobox{ background:var(--bgr); border:1px solid var(--hl); border-radius:6px; padding:1.1rem 1.4rem; margin:1.2rem 0 0 0; font-size:0.98rem; }
   #cm-p4-root .infobox strong{ color:var(--gold); }
 </style>
-<div class="kicker">Series A Extended · Preview · New Angle</div>
+<div class="kicker">Series A Extended · Preview</div>
 <h2>Mātṛkā and Mālinī: Two Orderings of the Same Fifty Powers</h2>
 <div class="dtitle deva">मातृका-मालिनी भेदः</div>
 <p class="lede">Part Three treated Mātṛkā as cosmogonic principle and ritual body-map. What it did not address is a distinction Kashmir Śaiva Tantra treats as doctrinally load-bearing in its own right: the same fifty phonemes admit of two entirely different internal orderings, each said to unlock a different register of power.</p>
@@ -1633,7 +1148,7 @@
 <div class="infobox"><strong>Scope note —</strong> this preview states the Mātṛkā/Mālinī distinction at the level of doctrinal function; a full Part Four would document the specific Mālinī letter-sequence, its attestation across Trika sources, and the scholarly debate over how early and how uniformly this second ordering was transmitted.</div>
 </section>
 
-<!-- ===================== PART FIVE · NYĀSA (NEW ANGLE: TAXONOMY) ===================== -->
+<!-- ===================== PART FIVE · NYĀSA TAXONOMY (preview) ===================== -->
 <section id="cm-p5-root">
 <style>
   #cm-p5-root{ --bg:#15120e; --bgr:#1c1712; --gold:#c9a24b; --goldb:#e0bb62; --rust:#9c5a3c; --ink:#e9dfc9; --inkd:#b8ab8e; --hl:rgba(201,162,75,0.28);
@@ -1651,7 +1166,7 @@
   #cm-p5-root .infobox{ background:var(--bgr); border:1px solid var(--hl); border-radius:6px; padding:1.1rem 1.4rem; margin:1.2rem 0 0 0; font-size:0.98rem; }
   #cm-p5-root .infobox strong{ color:var(--gold); }
 </style>
-<div class="kicker">Series A Extended · Preview · New Angle</div>
+<div class="kicker">Series A Extended · Preview</div>
 <h2>The Taxonomy of Nyāsa: Which Body Is Being Mapped?</h2>
 <div class="dtitle deva">न्यासभेदाः — कस्य शरीरस्य मानचित्रणम्?</div>
 <p class="lede">Part Three treated nyāsa at the level of its governing metaphor — the body re-founded as territory. What that treatment left unaddressed is that "nyāsa" is not one rite but a family of procedurally distinct rites, each mapping a different layer of the practitioner's constitution before mantra recitation proper begins.</p>
@@ -1669,7 +1184,7 @@
 <div class="infobox"><strong>Scope note —</strong> this preview names the four most widely attested categories of nyāsa; a full Part Five would extend into Mātṛkā-nyāsa's own specific placement-sequence (already introduced in Part Three) as a fifth, distinct category layered onto this general taxonomy, and would document manual-to-manual variation in ordering and terminology.</div>
 </section>
 
-<!-- ===================== PART SIX · KUṆḌALINĪ AND THE GRANTHI DOCTRINE ===================== -->
+<!-- ===================== PART SIX · KUṆḌALINĪ AND THE GRANTHI DOCTRINE (preview) ===================== -->
 <section id="cm-p6-root">
 <style>
   #cm-p6-root{ --bg:#15120e; --bgr:#1c1712; --gold:#c9a24b; --goldb:#e0bb62; --rust:#9c5a3c; --ink:#e9dfc9; --inkd:#b8ab8e; --hl:rgba(201,162,75,0.28);
@@ -1703,6 +1218,19 @@
 
 <div class="infobox"><strong>Scope note —</strong> this preview states the three-granthi structure and its standard textual attestation; a full Part Six would extend into the six-cakra system's own more granular correspondences (Ṣaṭcakra-nirūpaṇa) and the documented variation across haṭha-yogic and Śaiva-tantric sources on exact granthi placement.</div>
 </section>
-<!-- ===================== end injectable foundational previews ===================== -->
+<!-- ============================================================
+     CLOSING EDITORIAL NOTE
+     ============================================================ -->
+<div class="cm-editorial-close">
+  <b>This part's Mātṛkā and Śiva Sūtra apparatus, together with its six universal ślokas and its Aṣṭamātṛkā-adjacent doctrinal material, completes the depth this Part Three sets out to deliver: vibrational reality is documented across five registers and their extended commentary, the eleven and six cross-referenced ślokas are named and traced, and the bibliography and glossary close the doctrine's own textual apparatus. Previews for Parts One, Two, Four, Five, and Six point ahead to where this series continues.</b>
+  <span class="cm-close-tag">— Editorial Framework · Series A Extended</span>
+</div>
+
+</main>
+
+<footer class="cm-footer">
+  Cultural Musings · Series A Extended · Part Three — Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses
+</footer>
+
 </body>
 </html>

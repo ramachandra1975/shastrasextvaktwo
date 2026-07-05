@@ -1232,5 +1232,282 @@
   Cultural Musings · Series A Extended · Part Three — Pramātṛ–Prameya: The Sūtra Across Forty-Two Lenses
 </footer>
 
+<!-- ================================================================
+     NINE-TAB DEEP DIVE — THE UNANSWERED QUESTIONS, IN DEPTH
+     Placed as the final section of the page, after the footer.
+     Self-contained: scoped styles/script under #cm-uq-root.
+     Does not touch nav.cm-series-nav.
+     ================================================================ -->
+<section id="cm-uq-root">
+<style>
+  #cm-uq-root {
+    --bg: #15120e;
+    --bgr: #1c1712;
+    --gold: #c9a24b;
+    --goldb: #e0bb62;
+    --rust: #9c5a3c;
+    --ink: #e9dfc9;
+    --inkd: #b8ab8e;
+    --hl: rgba(201,162,75,0.28);
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Cormorant Garamond","Crimson Text",Georgia,serif;
+    line-height: 1.75;
+    padding: 3.5rem 1.5rem 4.5rem 1.5rem;
+    max-width: 1040px;
+    margin: 0 auto;
+    border-top: 1px solid var(--hl);
+  }
+  #cm-uq-root .deva { font-family: "Noto Sans Devanagari","Sanskrit 2003",serif; }
+  #cm-uq-root .kicker {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 0.78rem;
+    color: var(--gold);
+    font-family: Georgia, serif;
+    margin-bottom: 0.6rem;
+  }
+  #cm-uq-root h2 {
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: var(--goldb);
+    margin: 0 0 0.3rem 0;
+  }
+  #cm-uq-root .dtitle {
+    font-size: 1.25rem;
+    color: var(--inkd);
+    margin-bottom: 1rem;
+  }
+  #cm-uq-root .lede {
+    font-size: 1.2rem;
+    color: var(--inkd);
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
+  #cm-uq-root p { margin: 0 0 1rem 0; font-size: 1.1rem; }
+  #cm-uq-root h4 {
+    font-size: 1.05rem;
+    color: var(--gold);
+    margin: 1.4rem 0 0.5rem 0;
+    font-weight: 600;
+  }
+
+  /* ---------- Tab bar ---------- */
+  #cm-uq-root .cm-uq-tabbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.4rem;
+    border-bottom: 1px solid var(--hl);
+    padding-bottom: 1.2rem;
+  }
+  #cm-uq-root .cm-uq-tabbtn {
+    background: var(--bgr);
+    border: 1px solid var(--hl);
+    color: var(--inkd);
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    font-size: 0.86rem;
+    font-family: Georgia, serif;
+    cursor: pointer;
+    text-align: left;
+    line-height: 1.3;
+    transition: border-color 0.15s ease, color 0.15s ease, background 0.15s ease;
+  }
+  #cm-uq-root .cm-uq-tabbtn .cm-uq-num {
+    display: inline-block;
+    color: var(--rust);
+    font-weight: 700;
+    margin-right: 0.4rem;
+  }
+  #cm-uq-root .cm-uq-tabbtn:hover {
+    border-color: var(--gold);
+    color: var(--goldb);
+  }
+  #cm-uq-root .cm-uq-tabbtn.cm-uq-active {
+    background: var(--gold);
+    color: var(--bg);
+    border-color: var(--gold);
+  }
+  #cm-uq-root .cm-uq-tabbtn.cm-uq-active .cm-uq-num { color: var(--bg); }
+
+  /* ---------- Panels ---------- */
+  #cm-uq-root .cm-uq-panel {
+    display: none;
+    background: var(--bgr);
+    border: 1px solid var(--hl);
+    border-radius: 8px;
+    padding: 1.8rem 2rem;
+  }
+  #cm-uq-root .cm-uq-panel.cm-uq-active { display: block; }
+  #cm-uq-root .cm-uq-panel-kicker {
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--rust);
+    margin-bottom: 0.4rem;
+  }
+  #cm-uq-root .cm-uq-panel h3 {
+    font-size: 1.5rem;
+    color: var(--goldb);
+    margin: 0 0 1.1rem 0;
+    font-weight: 600;
+  }
+  #cm-uq-root .cm-uq-srclist {
+    list-style: none;
+    padding: 0;
+    margin: 1.2rem 0 0 0;
+    font-size: 0.92rem;
+    color: var(--inkd);
+    border-top: 1px solid var(--hl);
+    padding-top: 1rem;
+  }
+  #cm-uq-root .cm-uq-srclist li { margin-bottom: 0.3rem; }
+  #cm-uq-root .cm-uq-srclist .cm-uq-srctag {
+    color: var(--rust);
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    margin-right: 0.4rem;
+  }
+
+  @media (max-width: 640px) {
+    #cm-uq-root .cm-uq-tabbar { flex-direction: column; }
+    #cm-uq-root .cm-uq-panel { padding: 1.4rem 1.3rem; }
+  }
+</style>
+
+<div class="kicker">Closing Deep Dive · Series A Extended · Part Three</div>
+<h2>The Unanswered Questions, Revisited in Depth</h2>
+<div class="dtitle deva">अनुत्तरप्रश्नाः — गभीरतरं विवेचनम्</div>
+<p class="lede">This paper accumulated fifteen genuine open questions across its five-register hermeneutic and its extended commentary, registered but not resolved in each case. What follows regroups those fifteen into nine thematic clusters and gives each cluster the room a single bullet point could not — not to close the questions, but to show precisely where each one presses hardest.</p>
+
+<div class="cm-uq-tabbar" role="tablist" aria-label="Unanswered questions, nine clusters">
+  <button class="cm-uq-tabbtn cm-uq-active" data-cm-uq-tab="1"><span class="cm-uq-num">1</span>Textual Origins &amp; Borrowing</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="2"><span class="cm-uq-num">2</span>Authorship &amp; Transmission</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="3"><span class="cm-uq-num">3</span>Fifty or Fifty-One</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="4"><span class="cm-uq-num">4</span>Nyāsa's Vedic Continuity</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="5"><span class="cm-uq-num">5</span>The Sphoṭa Bearing</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="6"><span class="cm-uq-num">6</span>Two Descent Chronologies</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="7"><span class="cm-uq-num">7</span>Physiological Specificity</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="8"><span class="cm-uq-num">8</span>Cognitive Parallels Under Strain</button>
+  <button class="cm-uq-tabbtn" data-cm-uq-tab="9"><span class="cm-uq-num">9</span>Limits of Empirical Method</button>
+</div>
+
+<div class="cm-uq-panel cm-uq-active" data-cm-uq-panel="1">
+  <div class="cm-uq-panel-kicker">Cluster One</div>
+  <h3>Textual Origins &amp; Borrowing</h3>
+  <p>Three live possibilities sit unresolved behind Śiva Sūtra 2.7's mātṛkā-cakra-sambodhaḥ: direct borrowing from prior grammatical sphoṭa theory, independent parallel development within a shared Sanskrit intellectual environment, or a later Śaiva re-purposing of vocabulary whose technical sense had already broadened by Vasugupta's era. The difficulty in choosing between them is structural, not just a gap in the surviving record: Bhartṛhari's own dates are themselves disputed within a window of roughly a century, and the Trika oral material that likely fed into the Śiva Sūtras has left no independently datable trace prior to its ninth-century crystallisation. Borrowing requires two fixed points in time with a documented channel between them; this paper has, at best, two moving points and no documented channel.</p>
+  <p>The same problem recurs, at even greater scale, for the Ṛgvedic Vāk-Sūkta as a candidate antecedent of Mātṛkā doctrine. Well over a millennium separates the hymn's composition from the earliest clearly attested Tantric phoneme-power material, and the intervening textual record is sparse on this specific question. A shared Sanskrit cosmological grammar of sound — the idea that speech and being are somehow of a piece — plausibly circulated continuously across that gap in ways no single surviving text captures, which would make the connection real but untraceable rather than absent.</p>
+  <p>This bears directly on a further concern: comparing the Śaiva, Advaita, Buddhist, and Bhartṛharian positions on bondage as though they were four independent, freestanding views risks obscuring the fact that these schools were often in direct, documented polemical contact — Śaiva non-dualists explicitly responded to Buddhist momentariness; Advaitins explicitly targeted Buddhist and Sāṅkhya positions in their own texts. This paper's four-way table is offered as a structural comparison of where each tradition locates the fragmenting mechanism, not as a claim that the four developed in historical isolation from one another — a distinction worth holding onto rather than eliding.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q1, Q8, and Q14 from this paper's earlier unanswered-questions lists.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="2">
+  <div class="cm-uq-panel-kicker">Cluster Two</div>
+  <h3>Authorship &amp; Transmission</h3>
+  <p>The traditional account of Vasugupta receiving the seventy-seven sūtras already inscribed on rock is a revelation-narrative, not a historiographical claim, and the paper is careful not to treat it as one. What matters for textual criticism is the narrower question underneath it: whether the sūtras as we have them represent a single compositional act or a redaction of pre-existing oral Śaiva material whose individual aphorisms may be considerably older than their traditional compiler. The terse, aphoristic form of the text — closer to a set of mnemonic headings than to continuous argument — is at least consistent with a compilation history, though consistency is not evidence of it.</p>
+  <p>A further complication: what this paper treats as "the Śiva Sūtras' own claim" throughout is, in practice, already read through Kṣemarāja's Vimarśinī commentary, without which several of the more compressed sūtras (1.3, 1.6, 3.1 in the numbering used here) are not straightforwardly interpretable at all. The commentary is itself an interpretive layer with its own century-later theological commitments, and this paper has not attempted to separate what the root sūtras assert from what Kṣemarāja's reading supplies — a separation later, more technical work on this material would need to make explicit.</p>
+  <p>The same authorship question recurs one step later in the tradition, with Abhinavagupta's identification of Mātṛkā with Bhairava as the "Mass of Sounds" (śabdarāśi). Abhinavagupta is documented to have drawn extensively on earlier Trika āgamas — the Mālinīvijayottara among them — several of which do not survive independently in a form allowing direct comparison. What reads, from where we stand, as Abhinavagupta's original synthesis may in significant part be his systematisation of source material now lost, making it difficult to assign credit for the specific Mātṛkā–Bhairava identification with any confidence.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q2 and Q9 from this paper's earlier unanswered-questions lists.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="3">
+  <div class="cm-uq-panel-kicker">Cluster Three</div>
+  <h3>Fifty or Fifty-One: What the Count Is Actually Counting</h3>
+  <p>The varṇamālā's count fluctuates between forty-nine, fifty, and fifty-one across sources, depending on whether the anusvāra, the visarga, and certain Vedic-only sounds (the two vocalic ḷ variants among them) are counted as independent phonemes or as positional variants of sounds already counted. This is not obviously a single stable tradition later fragmented by regional transmission versus several genuinely independent regional enumerations retrospectively harmonised — the surviving evidence is compatible with either history.</p>
+  <p>What makes the question harder than ordinary textual variance is that the count is not merely descriptive bookkeeping in this material: fifty maps, in various traditions, onto fifty Śakti-pīṭhas, fifty-bead japa cycles, and specific correspondences in Mātṛkā-nyāsa's own body-placement sequence. A tradition that needs the count to be exactly fifty for its ritual correspondences to close has a live interest in resolving borderline cases (anusvāra, visarga) in whichever direction reaches fifty — which means the count's stability in a given source may reflect ritual convenience as much as, or more than, an independently motivated phonological analysis. Untangling the two would require source-by-source attention to which came first, the ritual scheme or the phonemic analysis backing it, a question this paper does not attempt to settle for any single source examined here.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q3 from this paper's earlier unanswered-questions list.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="4">
+  <div class="cm-uq-panel-kicker">Cluster Four</div>
+  <h3>Nyāsa's Claimed Vedic Continuity</h3>
+  <p>Vedic śrauta and gṛhya ritual does include documented instances of touch directed at ritual implements and, in some prāṇāyāma-adjacent practice, at the practitioner's own body — but this is a considerably thinner and less systematised precedent than the fully elaborated fifty-point Mātṛkā-nyāsa this series' companion material describes. The gap between an occasional ritual touch and a complete, letter-by-letter re-founding of the body as a matrix of phonemic power is large enough that "precedent" may be doing more work than the Vedic evidence, on its own, can support.</p>
+  <p>This matters because later Tantric traditions have a documented, general pattern of claiming Vedic antecedents specifically in order to secure orthodox legitimacy in a Brahminical intellectual environment that was often suspicious of Tantra's independent, non-Vedic authority. That general pattern does not prove that any specific nyāsa-continuity claim is false — but it does mean continuity claims made within Tantric sources themselves cannot be taken as neutral historical testimony; they need independent textual corroboration from outside the tradition making the claim, corroboration this paper has not been able to establish for Mātṛkā-nyāsa specifically.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q4 from this paper's earlier unanswered-questions list.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="5">
+  <div class="cm-uq-panel-kicker">Cluster Five</div>
+  <h3>Does Mātṛkā Need Sphoṭa to Be True?</h3>
+  <p>Mātṛkā doctrine's cosmogonic claim operates at the level of the individual phoneme — each of the fifty letters is independently a locus of power. Bhartṛhari's own vākya-sphoṭa doctrine, by contrast, holds that sentence-meaning is the primary, indivisible unit of linguistic cognition, with word- and phoneme-level meaning being secondary abstractions extracted from it after the fact. Taken at face value, the two claims pull in different directions: if phoneme-level meaning is genuinely secondary and derivative, does that undercut Mātṛkā's insistence on the phoneme as a primary locus of power?</p>
+  <p>The tension may be more apparent than real, but resolving it requires a distinction this paper has not fully drawn out until now: sphoṭa theory is a claim about how linguistic meaning is cognised by a listener, while Mātṛkā doctrine is a claim about how being itself is generated by sound, prior to and independent of any listener cognising anything. These are not obviously the same kind of "meaning," and a tradition could coherently hold that sentence-meaning is cognitively primary while phoneme-level power is ontologically primary, without contradiction — cognition and cosmogony operating on different timelines and different objects. Whether the classical sources themselves ever draw this precise distinction, or whether it is this paper's own reconciling proposal rather than a documented resolution within the tradition, remains genuinely open.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q6 from this paper's earlier unanswered-questions list.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="6">
+  <div class="cm-uq-panel-kicker">Cluster Six</div>
+  <h3>Two Descent Chronologies: Vāk-Levels and Bindu-Nāda-Kalā</h3>
+  <p>Bhartṛhari's four-level descent — parā, paśyantī, madhyamā, vaikharī — and Kashmir Śaivism's own related but technically distinct sequence of bindu (the point of undifferentiated potential), nāda (resonance or vibration), and kalā (differentiation into part) both describe a movement from undifferentiated ground to manifest multiplicity. Whether one sequence historically precedes the other, whether they developed independently and were only later correlated by Śaiva commentators eager to harmonise their tradition with Bhartṛhari's grammatical prestige, or whether they represent genuinely convergent solutions to a shared problem within Sanskrit intellectual culture, is not settled by the sources this paper has consulted.</p>
+  <p>Part of the difficulty is dating: current scholarly estimates place Bhartṛhari in a roughly fifty-year window in the fifth century CE, while the bindu-nāda-kalā sequence is attested with confidence mainly through Kṣemarāja and Abhinavagupta in the tenth and eleventh centuries — a gap of half a millennium during which the sequence may have circulated orally in forms no longer recoverable. A half-millennium gap in the written record is not evidence of absence during that period, but it does mean any claim about which sequence came first, or whether either genuinely derives from the other, is necessarily provisional.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q7 from this paper's earlier unanswered-questions list.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="7">
+  <div class="cm-uq-panel-kicker">Cluster Seven</div>
+  <h3>What a Genuinely Sanskrit-Specific Study Would Require</h3>
+  <p>This paper's neurological register has, throughout, connected mantra recitation to general physiological mechanisms (paced breathing, vagally-mediated autonomic shifts) documented across many unrelated contemplative traditions — never to anything specific to Sanskrit bīja-syllables. Making that distinction empirically rather than just asserting it would require a study design this paper has not found executed in the existing literature: a matched-rhythm control condition using non-Sanskrit or semantically meaningless syllables recited at identical pace and breath-length, randomised assignment of practitioner-naive participants rather than comparison of already-practicing meditators against non-practitioners, and a longitudinal rather than cross-sectional design, since most existing meditator-versus-control studies cannot separate the effect of practice from the effect of who chooses to take up the practice in the first place.</p>
+  <p>To this paper's knowledge, no study meeting all of these conditions for Sanskrit bīja-recitation specifically currently exists. That absence does not mean no such effect exists — only that the entire neurological register offered earlier in this paper remains, honestly stated, a plausible bridging hypothesis rather than an established finding, and readers should weight it accordingly.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q5 and Q13 from this paper's earlier unanswered-questions lists.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="8">
+  <div class="cm-uq-panel-kicker">Cluster Eight</div>
+  <h3>Where the Cognitive-Science Parallels Actually Strain</h3>
+  <p>Three structural parallels were offered earlier in this paper — predictive processing, attention schema theory, and global workspace theory — each held at arm's length from the Śiva Sūtras' own metaphysical claims. Looked at closely, each strains at a specific, identifiable point rather than merely being "unproven." Predictive-processing accounts of self-modelling have no analogue for the specific claim that the self-model is fifty-fold and phonemically structured via Mātṛkā; the generic self-modelling literature this paper cited was never built to represent that particular structure, and the parallel may hold at the level of "selves are constructed" while saying nothing at all about why fifty, or why phonemes specifically.</p>
+  <p>Attention schema theory's claim — that subjective awareness is itself a constructed internal model — sits in real tension, not just unexplored distance, with Śiva Sūtra 1.1's claim that consciousness is directly, self-evidently real rather than a model of anything further. These are not two compatible descriptions of the same thing at different levels; they may be two incompatible claims about what awareness fundamentally is, and this paper's earlier language of "resonance" and "structural parallel" should not be read as papering over that incompatibility.</p>
+  <p>Global workspace theory's account of broadcast-based cognitive unity offers a looser fit still to the theatrical cluster of Śiva Sūtras 3.9–3.11: both address how apparent multiplicity becomes experienced unity, but nothing in global workspace theory requires, or even suggests, the specific claim that dancer, stage, and audience are one and the same field — that is a metaphysical claim the theatrical metaphor makes on its own terms, not one recoverable from cognitive architecture alone. The honest summary across all three: structural resemblance at a coarse level of description, and real, specific incompatibility once either framework is pressed on its details.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q11, Q12, and Q15 from this paper's earlier unanswered-questions lists.</li>
+  </ul>
+</div>
+
+<div class="cm-uq-panel" data-cm-uq-panel="9">
+  <div class="cm-uq-panel-kicker">Cluster Nine</div>
+  <h3>Whether Empirical Method Is Even the Right Instrument</h3>
+  <p>Underneath the specific unresolved questions in the eight clusters above sits a more basic methodological one: whether Nyāsa and Śāktopāya's own stated aims — liberation, cosmic identification, recognition (pratyabhijñā) of one's identity with unconditioned consciousness — are the kind of claim controlled empirical testing is designed to adjudicate at all, as distinct from the practice's downstream bodily and attentional correlates, which plainly are. This is a live, unresolved question in contemplative science more broadly, not one specific to this tradition: a soteriological claim about the ultimate nature of awareness is a first-person, transformative claim, while a controlled study produces third-person, measurable correlates — heart-rate variability, EEG band-power, self-reported affect. A positive finding on the latter does not confirm the former, and a null finding on the latter does not disconfirm it either, because the two are not measuring the same thing.</p>
+  <p>None of this should be read as placing the tradition's deepest claims beyond all scrutiny by default. It means, more narrowly, that a different evidentiary standard — internal coherence, first-person phenomenological report, consistency across independent practitioners' testimony within the tradition's own framework — may be the relevant one for adjudicating claims about recognition and liberation, while physiological measurement remains exactly the right standard for the practice's bodily and attentional correlates. Confusing the two standards, in either direction, is where this paper has tried hardest throughout not to overstate its case.</p>
+  <ul class="cm-uq-srclist">
+    <li><span class="cm-uq-srctag">Regroups</span>Q10 from this paper's earlier unanswered-questions list.</li>
+  </ul>
+</div>
+
+<script>
+(function(){
+  var root = document.getElementById('cm-uq-root');
+  if (!root) return;
+  var buttons = root.querySelectorAll('.cm-uq-tabbtn');
+  var panels = root.querySelectorAll('.cm-uq-panel');
+  buttons.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = btn.getAttribute('data-cm-uq-tab');
+      buttons.forEach(function(b){ b.classList.remove('cm-uq-active'); });
+      panels.forEach(function(p){ p.classList.remove('cm-uq-active'); });
+      btn.classList.add('cm-uq-active');
+      var panel = root.querySelector('.cm-uq-panel[data-cm-uq-panel="' + target + '"]');
+      if (panel) panel.classList.add('cm-uq-active');
+    });
+  });
+})();
+</script>
+
+</section>
+
+
 </body>
 </html>
